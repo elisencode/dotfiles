@@ -24,7 +24,10 @@ Use present tense
 5. Use the imperative mood in the subject line;
 6. Wrap the body at 72 characters;
 7. Use the body to explain "what and why" vs. "how";
-Keep in mind: this has all been said before.
-Learn from Chris Beams.
+
+Keep in mind: this has all been said before.<br>
+Learn from Chris Beams.<br>
+
 Tips: Learn to love the command line. Leave the IDE behind.
+
 `man git commit`
