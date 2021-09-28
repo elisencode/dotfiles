@@ -7,6 +7,16 @@
 << Dotfiles from Start to Finish-ish - Patrick McDonald | Udemy >>
 <https://github.com/eieioxyz/dotfiles_macos>
 
+## TODO
+- Terminal Preferences
+- Changed Shell to ZSH
+- Dock Preferences
+- Mission Control Preference (don't rearrange spaces)
+- Finder Show Path Bar
+- Trackpad (Three Finger Drag and Tap to Click)
+- .zshrc
+- Git (config and SSH)
+
 ## ? Homebrew
 
 > - Record the applications you've installed and automate the process later on.
