@@ -41,3 +41,26 @@ Learn from Chris Beams.<br>
 Tips: Learn to love the command line. Leave the IDE behind.
 
 `man git commit`
+
+## Ponctuation & code typographique
+### ABB. = Abbreviation [^1]
+### Ex.: = Exemple
+* Blablabla, blabla
+* Blablabla. Blabla
+* Blablabla... blabla
+* Blablabla : blabla
+* Blablabla ! blabla
+* Blablabla ? blabla
+* Blablabla (blabla) blabla
+* Blablabla [blabla] blabla
+* Blablabla << guillemet français >> blabla. [^2] 
+* Blablabla "guillemet anglais" blabla
+* Tiret : blablabla - blabla
+* Trait d'union : blablabla-blabla
+
+[^1]: [Liste d'abréviations](<https://www.btb.termiumplus.gc.ca/redac-chap?lang=fra&lettr=chapsect1&info0=1#zz1>)
+[^2]: [Types de guillemets](<https://www.btb.termiumplus.gc.ca/redac-chap?lang=fra&lettr=chapsect7&info0=7.1>)
+
+Learn from:<br>
+[Footnotes Markdown Github](<https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/>)<br>
+[Markdown Guide Cheat Sheet](<https://www.markdownguide.org/cheat-sheet/>)
