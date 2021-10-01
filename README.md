@@ -44,7 +44,7 @@ Tips: Learn to love the command line. Leave the IDE behind.
 
 ## Ponctuation & code typographique
 ### ABB. = Abbreviation [^1]
-### Ex.: = Exemple
+### Ex. : exemple
 * Blablabla, blabla
 * Blablabla. Blabla
 * Blablabla... blabla
@@ -58,9 +58,27 @@ Tips: Learn to love the command line. Leave the IDE behind.
 * Tiret : blablabla - blabla
 * Trait d'union : blablabla-blabla
 
-[^1]: [Liste d'abréviations](<https://www.btb.termiumplus.gc.ca/redac-chap?lang=fra&lettr=chapsect1&info0=1#zz1>)
-[^2]: [Types de guillemets](<https://www.btb.termiumplus.gc.ca/redac-chap?lang=fra&lettr=chapsect7&info0=7.1>)
+I. LA...
+  A. La...
+  B. La...
+II. L'APPLICATION...
+  A. La...
+    1°) La...
+      a) La...
+      b) La...
+    2°) La...
+  B. La...
+
+Blablabla :
+- lalala ;
+- blablabla ;
+- Hahaha ;
+- yeah yeah yeah.
 
 Learn from:<br>
 [Footnotes Markdown Github](<https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/>)<br>
 [Markdown Guide Cheat Sheet](<https://www.markdownguide.org/cheat-sheet/>)
+
+[^1]: [Liste d'abréviations](<https://www.btb.termiumplus.gc.ca/redac-chap?lang=fra&lettr=chapsect1&info0=1#zz1>)
+[^2]: [Types de guillemets](<https://www.btb.termiumplus.gc.ca/redac-chap?lang=fra&lettr=chapsect7&info0=7.1>)
+
