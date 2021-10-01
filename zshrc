@@ -2,7 +2,7 @@ echo Hello from .zshrc
 
 # Set Variable
 # Syntax highlighting for man pages using bat
-#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 
 # Change ZSH Options
