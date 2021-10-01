@@ -74,7 +74,7 @@ II. L'APPLICATION...
 Blablabla : <br>
 \- lalala ; <br>
 \- blablabla ; <br>
-\- Hahaha ; <br>
+\- hahaha ; <br>
 \- yeah yeah yeah.
 
 Learn from:<br>
