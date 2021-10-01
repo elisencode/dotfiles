@@ -58,22 +58,22 @@ Tips: Learn to love the command line. Leave the IDE behind.
 * Tiret : blablabla - blabla
 * Trait d'union : blablabla-blabla
 
-I. LA...
-  A. La...
-  B. La...
-II. L'APPLICATION...
-  A. La...
-    1°) La...
-      a) La...
-      b) La...
-    2°) La...
-  B. La...
+I. LA...<br>
+  A. La...<br>
+  B. La...<br>
+II. L'APPLICATION...<br>
+  A. La...<br>
+    1°) La...<br>
+      a) La...<br>
+      b) La...<br>
+    2°) La...<br>
+  B. La...<br>
 
 Blablabla :
-- lalala ;
-- blablabla ;
-- Hahaha ;
-- yeah yeah yeah.
+\- lalala ;
+\- blablabla ;
+\- Hahaha ;
+\- yeah yeah yeah.
 
 Learn from:<br>
 [Footnotes Markdown Github](<https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/>)<br>
