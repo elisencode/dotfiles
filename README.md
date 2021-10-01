@@ -58,21 +58,23 @@ Tips: Learn to love the command line. Leave the IDE behind.
 * Tiret : blablabla - blabla
 * Trait d'union : blablabla-blabla
 
-I. LA...<br>
-  A. La...<br>
-  B. La...<br>
-II. L'APPLICATION...<br>
-  A. La...<br>
-    1°) La...<br>
-      a) La...<br>
-      b) La...<br>
-    2°) La...<br>
-  B. La...<br>
+```
+I. LA...
+  A. La...
+  B. La...
+II. L'APPLICATION...
+  A. La...
+    1°) La...
+      a) La...
+      b) La...
+    2°) La...
+  B. La...
+```
 
-Blablabla :
-\- lalala ;
-\- blablabla ;
-\- Hahaha ;
+Blablabla : <br>
+\- lalala ; <br>
+\- blablabla ; <br>
+\- Hahaha ; <br>
 \- yeah yeah yeah.
 
 Learn from:<br>
