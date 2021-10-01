@@ -17,6 +17,7 @@
 - .zshrc
 - Git (config and SSH)
 - Homebrew install
+- Share this reps with a billion people
 
 ## ? Homebrew
 
