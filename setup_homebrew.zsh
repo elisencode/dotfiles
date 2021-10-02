@@ -88,7 +88,7 @@ which brew
 # `$PATH` is a environment variable that is file location-related.
 # When one types a command to run, 
 # the system looks for it in the directories specified by `PATH` in the order specified.
-echo "\n<<< \(-°0°)/ Show \$PATH (a environment variable that is file location-related): >>>\n"
+echo "\n<<< \(-°0°)/ Show \$PATH (a environment variable that is file location-related): echo \$PATH >>>\n"
 echo $PATH
 
 echo "\n<<< <(-°n°)/¨ ========= End another warm-up ========= ¨\(°n°-)> >>>\n"
@@ -100,22 +100,22 @@ echo "\n<<< ¨\( -°v°)/¨ ========= Go! Go! Go! ========= ¨\(°v°- )/¨ >>>\
 
 
 # You've done! Try installing a package: hello
-echo "\n<<< (^-'.')> You've done! Try installing your first package: hello >>>\n"
+echo "\n<<< (^-'.')> You've done! Try installing your first package: brew install hello >>>\n"
 brew install hello
 
 # You've done! Installing my packages.
-echo "\n<<< <(^.^)> You've done! Next package: brew search 'httpie' >>>\n"
+echo "\n<<< <(^.^)> You've done! Next package: brew search httpie >>>\n"
 brew search httpie
 echo "\n<<< <(^.^)> brew info httpie >>>\n"
 brew info httpie
-echo "\n<<< <(^.^)> :footprints: Installing my package: httpie >>>\n"
+echo "\n<<< <(^.^)> :footprints: Installing my package: brew install httpie >>>\n"
 brew install httpie
 
-echo "\n<<< <(^.^)> You've done! next package: bat >>>\n"
+echo "\n<<< <(^.^)> You've done! next package: brew search bat >>>\n"
 brew search bat
 echo "\n<<< <(^.^)> brew info bat >>>\n"
 brew info bat
-echo "\n<<< <(^.^)> :footprints: Installing my package: bat >>>\n"
+echo "\n<<< <(^.^)> :footprints: Installing my package: brew install bat >>>\n"
 brew install bat
 
 # Error: Installing casks is supported only on macOS
@@ -133,7 +133,7 @@ brew help
 echo "\n<<< <(-'.'-)> ========= Fastest Run Completed! ========= <(-'.'-)> >>>\n"
 # ========= Completed  =========
 
-echo "\n<<< ( ^_^)o *** :dart: Well done and Congratulation !!!! :dart: **** o(^_^ ) >>>\n"
+echo "\n<<< ( ^_^)o *** :dart: Well done and Congratulation!!!! :dart: **** o(^_^ ) >>>\n"
 echo "\n<<< :thumbsup: Reinstalling everything on a new OS completed. >>>\n"
 echo "\n<<< :grapes: The fruit of your labor is sweet. >>>\n"
 echo "\n<<< :heart: and I must say you deserve it. +(-_-+) >>>\n"
