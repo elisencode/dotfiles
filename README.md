@@ -14,9 +14,9 @@
 - Mission Control Preference (don't rearrange spaces)
 - Finder Show Path Bar
 - Trackpad (Three Finger Drag and Tap to Click)
-- .zshrc
+[x] .zshrc
 - Git (config and SSH)
-- Homebrew install
+[x] Homebrew install
 - Share this reps with a billion people
 
 ## ? Homebrew

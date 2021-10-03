@@ -40,9 +40,10 @@ echo "\n<<< <(-°u°)/¨ ========= End Warm-up ========= ¨\(°u°-)> >>>\n"
 echo "\n<<< ¨\( -°v°)/¨ ========= Let's go! ========= ¨\(°v°- )/¨ >>>\n"
 
 # Debian or Ubuntu
-echo "\n<<< \(°v°)/ Updating Linux Debian or Ubuntu >>>\n"
+echo "\n<<< \(°v°)/ Updating Linux Debian or Ubuntu: sudo apt-get update >>>\n"
 sudo apt-get update
-sudo updatebd
+echo "\n<<< \(°v°)/ Updating Linux Debian or Ubuntu: sudo apdatedb >>>\n"
+sudo updatedb
 echo "\n<<<  \(°v°)/ Installing the Homebrew dependencies on Linux Debian or Ubuntu >>>\n"
 sudo apt-get install build-essential procps curl file git
 
@@ -99,37 +100,26 @@ echo "\n<<< <(-°n°)/¨ ========= End another warm-up ========= ¨\(°n°-)> >>
 echo "\n<<< ¨\( -°v°)/¨ ========= Go! Go! Go! ========= ¨\(°v°- )/¨ >>>\n"
 
 
-# You've done! Try installing a package: hello
-echo "\n<<< (^-'.')> You've done! Try installing your first package: brew install hello >>>\n"
-brew install hello
+# Brew Bundle : A Homebrew subcommand to run your Brewfile.
+# Brew file : A file where you define softwares and applications you want to install.
+# Brew tap : A Homebrew subcommand to add additional repositories which are not in the official formulae.
+# Homebrew-cask : A tool which helps you to install Mac applications by using Homebrew.
+# Homebrew : A package manager which helps you to install software. 
+echo "\n<<< <(^.^)> You've done! What is Brew Bundle? A Homebrew subcommand to run your Brewfile. >>>\n"
+echo "\n<<< <(^.^)> Next -> running: brew bundle --verbose >>>\n"
+brew bundle --verbose
 
-# You've done! Installing my packages.
-echo "\n<<< <(^.^)> You've done! Next package: brew search httpie >>>\n"
-brew search httpie
-echo "\n<<< <(^.^)> brew info httpie >>>\n"
-brew info httpie
-echo "\n<<< <(^.^)> :footprints: Installing my package: brew install httpie >>>\n"
-brew install httpie
+echo "\n<<< l( ¨ø_ø)/° You've done! List Homebrew dependencies (Packages) (Formulae) : brew bundle list --brews >>>\n"
+brew bundle list --brews
 
-echo "\n<<< <(^.^)> You've done! next package: brew search bat >>>\n"
-brew search bat
-echo "\n<<< <(^.^)> brew info bat >>>\n"
-brew info bat
-echo "\n<<< <(^.^)> :footprints: Installing my package: brew install bat >>>\n"
-brew install bat
-
-# Error: Installing casks is supported only on macOS
-echo "\n<<< \(°_o)/ Ooups! Installing casks is supported only on macOS >>>\n"
-echo "\n<<< \(°_o)/ Sorry! NO brew install --cask google-chrome >>>\n"
-#brew install --cask --no-quarantine google-chrome
-echo "\n<<< \(°_o)/Sorry! NO brew install --cask visual-studio-code >>>\n"
-#brew install --cask --no-quarantine visual-studio-code
-echo "\n<<< \(°_o)/Sorry! NO brew install --cask >>\n"
-#brew install --cask --no-quarantine alfred
 
 # Show brew help
 echo "\n<<< <( *@.@)/ brew help >>>\n"
 brew help
+
+# Show brew bundle help
+echo "\n<<< <( *@.@)/ brew bundle --help >>>\n"
+brew bundle --help
 
 
 echo "\n<<< <(-'.'-)> ========= Fastest Run Completed! ========= <(-'.'-)> >>>\n"
@@ -139,3 +129,6 @@ echo "\n<<< ( ^_^)o *** :dart: Well done and Congratulation!!!! :dart: **** o(^_
 echo "\n<<< :thumbsup: Reinstalling everything on a new OS completed. >>>\n"
 echo "\n<<< :grapes: The fruit of your labor is sweet. >>>\n"
 echo "\n<<< :heart: and I must say you deserve it. +(-_-+) >>>\n"
+
+# Run package: hello
+hello
