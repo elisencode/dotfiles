@@ -121,9 +121,11 @@ brew install bat
 # Error: Installing casks is supported only on macOS
 echo "\n<<< \(°_o)/ Ooups! Installing casks is supported only on macOS >>>\n"
 echo "\n<<< \(°_o)/ Sorry! NO brew install --cask google-chrome >>>\n"
-#brew install --cask google-chrome
+#brew install --cask --no-quarantine google-chrome
 echo "\n<<< \(°_o)/Sorry! NO brew install --cask visual-studio-code >>>\n"
-#brew install --cask visual-studio-code
+#brew install --cask --no-quarantine visual-studio-code
+echo "\n<<< \(°_o)/Sorry! NO brew install --cask >>\n"
+#brew install --cask --no-quarantine alfred
 
 # Show brew help
 echo "\n<<< <( *@.@)/ brew help >>>\n"
