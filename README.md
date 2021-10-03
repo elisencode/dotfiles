@@ -8,15 +8,15 @@
 <https://github.com/eieioxyz/dotfiles_macos>
 
 ## TODO
-[ ] Terminal Preferences
-[ ] Changed Shell to ZSH
-[ ] Dock Preferences
-[ ] Mission Control Preference (don't rearrange spaces)
-[ ] Finder Show Path Bar
-[ ] Trackpad (Three Finger Drag and Tap to Click)
-[x] .zshrc
-[ ] Git (config and SSH)
-[x] Homebrew install
+[ ] Terminal Preferences<br>
+[ ] Changed Shell to ZSH<br>
+[ ] Dock Preferences<br>
+[ ] Mission Control Preference (don't rearrange spaces)<br>
+[ ] Finder Show Path Bar<br>
+[ ] Trackpad (Three Finger Drag and Tap to Click)<br>
+[x] .zshrc<br>
+[ ] Git (config and SSH)<br>
+[x] Homebrew install<br>
 [ ]- Share this reps with a billion people
 
 ## ? Homebrew
