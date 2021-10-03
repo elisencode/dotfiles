@@ -24,8 +24,9 @@
 > - Record the applications you've installed and automate the process later on.
 > - Start using the Brewfile. 
 > - Make sense when you reinstall everything on a new OS.
-> - The only disadvage is that not every program is available in Homebrew.
+> - The only disadvantage is that not every program is available in Homebrew.
 > - So occasionally, you've have to make a note of the application and remember to install it by hand.
+- Patrick McDonald
 
 ## The seven rules of a great Git commit message
 Use present tense
