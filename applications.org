@@ -94,7 +94,8 @@ Lists can contains tags (and checkboxes at the same time).
 
 * Repositories and package management
 [[https://itsfoss.com/ppa-guide/]][PPA GUIDE]
-What is a repository?<br>
+
+What is a repository?
 A repository is a collection of files that has information about various software:
 - their versions and some other details like the checksum.
 
@@ -107,10 +108,10 @@ Each Ubuntu version has its own official set of four repositories:
 ** Linux Package Managers
 [[https://www.tecmint.com/linux-package-managers/]][linux-package-managers]
 
-DPKG (Debian Package Management System):<br>
+DPKG (Debian Package Management System):
 - Dpkg is a base package management system for the Debian Linux family.
 - it is used to install, remove, store and provide information about `.deb packages`.
-- a low-level tool and there are front-end tools that help users to obtain packages from<br>
+- a low-level tool and there are front-end tools that help users to obtain packages from
   remote repositories and/or handle complex package relations and these include:
   + APT (Advanced Package Tool):
     + useful command line package management system that is a front end for dpkg package management system.
