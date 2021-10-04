@@ -130,6 +130,7 @@ DPKG (Debian Package Management System):
 ** Ubuntu Snap vs Apt vs Flatpak
 
 [[https://snapcraft.io/about]][snapcrat]
+
 What is Snap?
 - Snap is developed by *Canonical* for *operating systems* that use<br>
   the *Linux* kernel. The packages, called /snaps/
@@ -142,12 +143,14 @@ What is apt?
 
 [[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
 [[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
+
 What is PPA?
-- Personal Package Archives (PPAs) are software repositories designed for<br>
-  Ubuntu users and are easier to install than other third-party repositories.<br>
+- Personal Package Archives (PPAs) are software repositories designed for
+  Ubuntu users and are easier to install than other third-party repositories.
   PPAs are often used to distribute pre-release software so that it can be tested. 
-- The PPA allows application developers and Linux users to create their own repositories to distribute software.<br>
-  With PPA, you can easily get newer software version or software that are not available via the official Ubuntu repositories.
+- The PPA allows application developers and Linux users to create their own repositories to distribute software.
+  With PPA, you can easily get newer software version or software that are not available
+  via the official Ubuntu repositories.
 
 What is Flatpak?
 
@@ -155,7 +158,7 @@ What is Flatpak?
 [[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
 - Are Snap and Flatpak apps safe to install?
 - Official repos for such:
-  + Snaps have the https://snapcraft.io/ repo.<br>
+  + Snaps have the https://snapcraft.io/ repo.
     This is run by Canonical, the same people that build Ubuntu.
   + Flatpaks have an official repo at https://flathub.org/ . 
     Flatpaks were developed by Redhat but I don't know if they manage the flathub repo or not.
