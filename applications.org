@@ -35,7 +35,6 @@ Other Software:
       http://packages.microsoft.com/repos/code stable main
 - [X] Regolith-desktop environtment
       http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
-
       [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Install Regolith]
       + install the standard variant of Regolith Desktop from the release PPA:
         #+begin_src
