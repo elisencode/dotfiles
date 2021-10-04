@@ -32,17 +32,17 @@ Course/dotfiles-from-start-to-finish-ish
 * Ubuntu Software
 Other Software:
 - [X] visual-studio-code
-      http://packages.microsoft.com/repos/code stable main
+      + http://packages.microsoft.com/repos/code stable main
 - [X] Regolith-desktop environtment
-      http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
-      [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Install Regolith]
+      + http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
+      + [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Install Regolith]
       + install the standard variant of Regolith Desktop from the release PPA:
         #+begin_src
         $ sudo add-apt-repository ppa:regolith-linux/release
         $ sudo apt install regolith-desktop-standard
         #+end_src
 - [ ] google-chrome
-      [[https://doc.ubuntu-fr.org/google_chrome]]
+      + [[https://doc.ubuntu-fr.org/google_chrome]]
 - [ ] 
 
 * Welcome to Org mode
