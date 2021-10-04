@@ -59,6 +59,16 @@ Other Software:
 - can _/*combine*/_ the basic markup in any order,
 - however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers<br>
   if they are present since their contents are interpreted =_literally_=.
+
+#+begin_src
+- *Bold*
+- /italic/
+- _underline_
+- +strikethrough+
+- can _/*combine*/_ the basic markup in any order,
+- however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers<br>
+  if they are present since their contents are interpreted =_literally_=.
+#+end_src
 ** Lists
 Ordered and unordered bullets can be nested in any order:
 - Unordered lists start with `+`, `-`, or `*`[^1].
