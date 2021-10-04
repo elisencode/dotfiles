@@ -100,11 +100,15 @@ echo "\n<<< <(-°n°)/¨ ========= End another warm-up ========= ¨\(°n°-)> >>
 echo "\n<<< ¨\( -°v°)/¨ ========= Go! Go! Go! ========= ¨\(°v°- )/¨ >>>\n"
 
 
+# <https://github.com/Homebrew/homebrew-bundle>
 # Brew Bundle : A Homebrew subcommand to run your Brewfile.
 # Brew file : A file where you define softwares and applications you want to install.
 # Brew tap : A Homebrew subcommand to add additional repositories which are not in the official formulae.
+## Taps (Repositories)
 # Homebrew-cask : A tool which helps you to install Mac applications by using Homebrew.
+## Casks (Applications) # Error: Installing casks is supported only on macOS
 # Homebrew : A package manager which helps you to install software. 
+## Brews (Packages) (Formulae)
 echo "\n<<< <(^.^)> You've done! What is Brew Bundle? A Homebrew subcommand to run your Brewfile. >>>\n"
 echo "\n<<< <(^.^)> Next -> running: brew bundle --verbose >>>\n"
 brew bundle --verbose
