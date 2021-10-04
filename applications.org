@@ -204,8 +204,8 @@ Download and install the `.deb package (64-bit)` from official software website:
 
 [[https://doc.ubuntu-fr.org/visual_studio_code]][Wiki ubuntu-fr | Installation | Visual Studio Code]
 
-E.g: The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to<br>
-download and install the `.deb package (64-bit)`, either through the graphical software center<br>
+E.g: The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to
+download and install the `.deb package (64-bit)`, either through the graphical software center
 if it's available,or through the command line with:
 
 Installing the .deb package will automatically install the apt repository and
@@ -234,5 +234,5 @@ sudo apt install ./<file>.deb
 * Via `git clone` source code
 
 * Footnotes:
-[^1] `*` cannot be used to start a plain list if it is immediatly<br>
+[^1] `*` cannot be used to start a plain list if it is immediatly
 preceded by a newline because it will be interpreted as a heading.
