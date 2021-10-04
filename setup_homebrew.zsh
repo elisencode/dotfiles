@@ -3,6 +3,13 @@
 # In Terminal zsh shell in `~/.dotfiles`, `git branch`, `git checkout homebrew`: run `./install` 
 echo "\n<<< ====*Starting Homebrew Setup on Linux Debian or Ubuntu*==== >>>\n"
 
+# macOS:
+## TODO: Keep an eys out for a different `--no-quarantine` solution.
+## Currently, you can't do `brew bundle --no-quarantine` as an option.
+## It's currently exported in zshrc:
+## export HOMEBREW_CASK_OPTS="--no-quarantine"
+## https://github.com/Homebrew/homebrew-bundle/issues/474
+
 # ========= Warm-up =========
 echo "\n<<< <(-°u°)/¨ ========= Warm-up ========= ¨\(°u°-)> >>>\n"
 

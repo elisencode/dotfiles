@@ -1,0 +1,192 @@
+#-*- mode: org -*-
+#+startup: showall
+#+title: A NOTE ABOUT APPLICATIONS TO INSTALL BY HAND
+#+author: ELISE N
+#+date: 2021-10-04 Mon
+#+seq_todo: TODO() | IN-PROGRESS() | WAINTING(w) | CANCELLED(c) | DONE(d)
+#+options: toc:nil
+
+* Welcome to Org mode
+[[https://orgmode.org/quickstart.html]][Quickstart]
+
+* Quickstart
+** Preamble
+** Heading
+** Markup
+- *Bold*
+- /italic/
+- _underline_
+- +strikethrough+
+- can _/*combine*/_ the basic markup in any order,
+- however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers<br>
+  if they are present since their contents are interpreted =_literally_=.
+** Lists
+Ordered and unordered bullets can be nested in any order:
+- Unordered lists start with `+`, `-`, or `*`[^1].
+- Ordered lists start with `1.`, `1)`, `A.`, or `A)`.
+
+Lists can contain checkboxes [ ], [-], [X].
+#+begin_src
+- [ ] not started
+- [-] in progress
+- [X] complete
+#+end_src
+
+Lists can contains tags (and checkboxes at the same time).
+#+begin_src
+- [ ] fruits :: get apples
+- [ ] veggies :: get carrots
+#+end_src
+** Links
+** Images
+** Blocks
+** Tables
+** Comments
+`#`
+** Macros
+
+* Repositories and package management
+[[https://itsfoss.com/ppa-guide/]][PPA GUIDE]
+What is a repository?<br>
+A repository is a collection of files that has information about various software:
+- their versions and some other details like the checksum.
+
+Each Ubuntu version has its own official set of four repositories:
+1. *Main* - Canonical-supported free and open-source software.
+2. *Universe* - Community-maintained free and open-source software.
+3. *Restricted* - Proprietary drivers for devices.
+4. *Multiverse* - Software restrited by copyright or legal issues.
+
+** `sudo apt` vs `sudo apt-get`
+
+** Ubuntu Snap vs Apt vs Flatpak
+
+[[https://snapcraft.io/about]][snapcrat]
+What is Snap?
+- Snap is developed by *Canonical* for *operating systems* that use<br>
+  the *Linux* kernel. The packages, called /snaps/
+- Snap is *a software package and deployment system* that uses<br>
+  self-contained packages called snaps to deliver software to users.
+- Snap enables developpers to deliver their apps directly to users via Snap Store.  
+
+What is apt?
+- APT mostly obains packages from a distribution's official repositories.
+
+[[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
+[[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
+What is PPA?
+- Personal Package Archives (PPAs) are software repositories designed for<br>
+  Ubuntu users and are easier to install than other third-party repositories.<br>
+  PPAs are often used to distribute pre-release software so that it can be tested. 
+- The PPA allows application developers and Linux users to create their own repositories to distribute software.<br>
+  With PPA, you can easily get newer software version or software that are not available via the official Ubuntu repositories.
+
+What is Flatpak?
+
+** External sources, PPAs or packages downloaded from websites
+[[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
+- Are Snap and Flatpak apps safe to install?
+- Official repos for such:
+  + Snaps have the https://snapcraft.io/ repo.<br>
+    This is run by Canonical, the same people that build Ubuntu.
+  + Flatpaks have an official repo at https://flathub.org/ . 
+    Flatpaks were developed by Redhat but I don't know if they manage the flathub repo or not.
+- Stability, maintained by ?
+- Update, upgrade?
+- Run slowly or fast?
+- Location? Where applications are stored by them?
+
+* GNU/Linux Debian and Ubuntu based distributions
+** How to install
+#+begin_src
+sudo apdatedb
+sudo apt-get update
+apt search <package name>
+apt show <package name>
+apt list
+
+sudo apt-get install <package name>
+# or
+sudo apt install <package name>
+#+end_src
+
+** Lists
+Ubuntu 21.04:
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+* Via Snap
+[[https://snapcraft.io/code]]
+E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
+
+** How to install
+#+begin_src
+sudo snap install --classic code # or code-insiders
+#+end_src
+
+** Lists
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+* Via PPA: Installing Visual Studio Code with `apt`
+Download and install the `.deb package (64-bit)` from official software website:
+
+** How to install
+[[https://code.visualstudio.com/docs/setup/linux]][Visual Studio Code on Linux]
+[[https://doc.ubuntu-fr.org/visual_studio_code]][Wiki ubuntu-fr | Installation | Visual Studio Code]
+E.g: The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to<br>
+download and install the `.deb package (64-bit)`, either through the graphical software center<br>
+if it's available,or through the command line with...
+
+Installing the .deb package will automatically install the apt repository and<br>
+signing key to enable auto-updating using the system's package manager.<br>
+Alternatively, the repository and key can also be installed manually with the following script...
+
+#+begin_src
+pwd
+# `~` : Home folder, current users home directory.
+cd ~    # or `cd`
+# Create a `src/` directory to store applications to install/uninstall/remove manually
+mkdir ~/src/
+cd ~/src/
+#+end_src
+
+#+begin_src
+sudo apt install ./<file>.deb
+
+# If you're on an older Linux distribution, you will need to run this instead:
+# sudo dpkg -i <file>.deb
+# sudo apt-get install -f # Install dependencies
+#+end_src
+
+** Lists
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+* Footnotes:
+[^1] `*` cannot be used to start a plain list if it is immediatly<br>
+preceded by a newline because it will be interpreted as a heading.
