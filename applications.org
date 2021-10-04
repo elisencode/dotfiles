@@ -6,6 +6,48 @@
 #+seq_todo: TODO() | IN-PROGRESS() | WAINTING(w) | CANCELLED(c) | DONE(d)
 #+options: toc:nil
 
+* Lists # course/dotfiles-from-start-to-finish-ish
+~/.dotfiles/Brewfile
+- [X] tap "homebrew/bundle"
+- [X] tap "homebrew/cask"
+- [X] brew "bat"
+- [X] brew "exa"
+- [X] brew "git"
+- [X] brew "httpie"
+- [ ] cask "alfred"
+- [ ] cask "dropbox"
+- [ ] cask "gitkraken"
+- [ ] cask "google-chrome"
+- [ ] cask "visual-studio-code"
+- [ ]
+
+* TODO manually
+- [ ] alfred
+- [ ] dropbox
+- [ ] gitkraken
+- [ ] google-chrome
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+* Ubuntu Software
+Other Software:
+- [X] visual-studio-code  # http://packages.microsoft.com/repos/code stable main
+- [X] Regolith-desktop environtment  # http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
+      [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Insall Regolith]
+      + install the standard variant of Regolith Desktop from the release PPA:
+        #+begin_src
+        $ sudo add-apt-repository ppa:regolith-linux/release
+        $ sudo apt install regolith-desktop-standard
+        #+end_src
+- [ ] google-chrome
+      [[https://doc.ubuntu-fr.org/google_chrome]]
+- [ ] blablabla blablabla\n
+      ccccccccc
+- [ ]
+- [ ]
+
 * Welcome to Org mode
 [[https://orgmode.org/quickstart.html]][Quickstart]
 
@@ -57,6 +99,26 @@ Each Ubuntu version has its own official set of four repositories:
 3. *Restricted* - Proprietary drivers for devices.
 4. *Multiverse* - Software restrited by copyright or legal issues.
 
+** Linux Package Managers
+[[https://www.tecmint.com/linux-package-managers/]][linux-package-managers]
+
+DPKG (Debian Package Management System):<br>
+- Dpkg is a base package management system for the Debian Linux family.
+- it is used to install, remove, store and provide information about `.deb packages`.
+- a low-level tool and there are front-end tools that help users to obtain packages from<br>
+  remote repositories and/or handle complex package relations and these include:
+  + APT (Advanced Package Tool):
+    + useful command line package management system that is a front end for dpkg package management system.
+    + Users of Debian or its derivatives such as Ubuntu and Linux Mint should be familiar with this package management tool.
+  + Aptitude Package Manager:
+    + command line front-end package management tool for Debian Linux family, it works similar to APT 
+    + It was initially built for Debian and its derivatives but now its functionality stretches to RHEL family as well.
+  + Synaptic Package Manager:
+    Synaptic is a GUI package management tool for APT based on GTK+ and<br>
+    it works fine for users who may not want to get their hands dirty on a command line.<br>
+    It implements the same features as apt-get command line tool.
+
+
 ** `sudo apt` vs `sudo apt-get`
 
 ** Ubuntu Snap vs Apt vs Flatpak
@@ -96,7 +158,7 @@ What is Flatpak?
 - Run slowly or fast?
 - Location? Where applications are stored by them?
 
-* GNU/Linux Debian and Ubuntu based distributions
+* Via Ubutu Package manager # GNU/Linux Debian and Ubuntu based distributions
 ** How to install
 #+begin_src
 sudo apdatedb
@@ -110,19 +172,6 @@ sudo apt-get install <package name>
 sudo apt install <package name>
 #+end_src
 
-** Lists
-Ubuntu 21.04:
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
 * Via Snap
 [[https://snapcraft.io/code]]
 E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
@@ -131,18 +180,6 @@ E.g: Visual Studio Code is officially distributed as a Snap package in the Snap 
 #+begin_src
 sudo snap install --classic code # or code-insiders
 #+end_src
-
-** Lists
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
 
 * Via PPA: Installing Visual Studio Code with `apt`
 Download and install the `.deb package (64-bit)` from official software website:
@@ -175,17 +212,7 @@ sudo apt install ./<file>.deb
 # sudo apt-get install -f # Install dependencies
 #+end_src
 
-** Lists
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+* Via ISO installs
 
 * Footnotes:
 [^1] `*` cannot be used to start a plain list if it is immediatly<br>
