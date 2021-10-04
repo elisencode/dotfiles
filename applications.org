@@ -43,8 +43,7 @@ Other Software:
         #+end_src
 - [ ] google-chrome
       [[https://doc.ubuntu-fr.org/google_chrome]]
-- [ ] blablabla blablabla  
-      ccccccccc
+- [ ] 
 - [ ]
 - [ ]
 
