@@ -133,7 +133,7 @@ DPKG (Debian Package Management System):
 
 What is Snap?
 - Snap is developed by *Canonical* for *operating systems* that use
-  the *Linux* kernel. The packages, called /snaps/
+  the *Linux* kernel. The packages, called /snaps/.
 - Snap is *a software package and deployment system* that uses
   self-contained packages called snaps to deliver software to users.
 - Snap enables developpers to deliver their apps directly to users via Snap Store.  
@@ -167,7 +167,9 @@ What is Flatpak?
 - Run slowly or fast?
 - Location? Where applications are stored by them?
 
-* Via Ubutu Package manager # GNU/Linux Debian and Ubuntu based distributions
+* Via Ubutu Package manager
+# GNU/Linux Debian and Ubuntu based distributions
+
 ** How to install
 #+begin_src
 sudo updatedb
@@ -183,6 +185,7 @@ sudo apt install <package name>
 
 * Via Snap
 [[https://snapcraft.io/code]]
+
 E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
 
 ** How to install
@@ -190,7 +193,8 @@ E.g: Visual Studio Code is officially distributed as a Snap package in the Snap 
 sudo snap install --classic code # or code-insiders
 #+end_src
 
-* Via PPA: Installing Visual Studio Code with `apt`
+* Via PPA
+# Installing Visual Studio Code with `apt`
 Download and install the `.deb package (64-bit)` from official software website:
 
 ** How to install
