@@ -167,7 +167,7 @@ What is Flatpak?
 - Run slowly or fast?
 - Location? Where applications are stored by them?
 
-* Via Ubutu Package manager
+* Via Ubuntu Package manager
 GNU/Linux Debian and Ubuntu based distributions
 
 ** How to install
