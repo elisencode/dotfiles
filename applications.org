@@ -4,9 +4,10 @@
 #+author: ELISE N
 #+date: 2021-10-04 Mon
 #+seq_todo: TODO() | IN-PROGRESS() | WAINTING(w) | CANCELLED(c) | DONE(d)
-#+options: toc:nil
+#+options: toc:t
 
-* Lists # course/dotfiles-from-start-to-finish-ish
+* Lists 
+# course/dotfiles-from-start-to-finish-ish
 ~/.dotfiles/Brewfile
 - [X] tap "homebrew/bundle"
 - [X] tap "homebrew/cask"
@@ -21,14 +22,11 @@
 - [ ] cask "visual-studio-code"
 - [ ]
 
-* TODO manually
+* TODO Manually
 - [ ] alfred
 - [ ] dropbox
 - [ ] gitkraken
 - [ ] google-chrome
-- [ ]
-- [ ]
-- [ ]
 - [ ]
 
 * Ubuntu Software
@@ -113,8 +111,8 @@ DPKG (Debian Package Management System):<br>
     + command line front-end package management tool for Debian Linux family, it works similar to APT 
     + It was initially built for Debian and its derivatives but now its functionality stretches to RHEL family as well.
   + Synaptic Package Manager:
-    Synaptic is a GUI package management tool for APT based on GTK+ and<br>
-    it works fine for users who may not want to get their hands dirty on a command line.<br>
+    Synaptic is a GUI package management tool for APT based on GTK+ and
+    it works fine for users who may not want to get their hands dirty on a command line.
     It implements the same features as apt-get command line tool.
 
 
@@ -160,7 +158,7 @@ What is Flatpak?
 * Via Ubutu Package manager # GNU/Linux Debian and Ubuntu based distributions
 ** How to install
 #+begin_src
-sudo apdatedb
+sudo updatedb
 sudo apt-get update
 apt search <package name>
 apt show <package name>
