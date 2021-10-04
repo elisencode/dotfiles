@@ -77,7 +77,15 @@ Lists can contains tags (and checkboxes at the same time).
 - [ ] veggies :: get carrots
 #+end_src
 ** Links
+#+begin_src
+[[https://orgmode.org][a nice website]]
+[[file:~/Pictures/dank-meme.png]]
+[[earlier heading][an earlier heading in the document]]
+#+end_src
 ** Images
+#+begin_src
+[[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
+#+end_src
 ** Blocks
 ** Tables
 ** Comments
@@ -210,6 +218,8 @@ sudo apt install ./<file>.deb
 #+end_src
 
 * Via ISO installs
+
+* Via `git clone` source code
 
 * Footnotes:
 [^1] `*` cannot be used to start a plain list if it is immediatly<br>
