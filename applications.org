@@ -142,6 +142,7 @@ What is apt?
 - APT mostly obains packages from a distribution's official repositories.
 
 [[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
+
 [[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
 
 What is PPA?
