@@ -132,9 +132,9 @@ DPKG (Debian Package Management System):
 [[https://snapcraft.io/about]][snapcrat]
 
 What is Snap?
-- Snap is developed by *Canonical* for *operating systems* that use<br>
+- Snap is developed by *Canonical* for *operating systems* that use
   the *Linux* kernel. The packages, called /snaps/
-- Snap is *a software package and deployment system* that uses<br>
+- Snap is *a software package and deployment system* that uses
   self-contained packages called snaps to deliver software to users.
 - Snap enables developpers to deliver their apps directly to users via Snap Store.  
 
