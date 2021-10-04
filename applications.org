@@ -7,7 +7,7 @@
 #+options: toc:t
 
 * Lists 
-# course/dotfiles-from-start-to-finish-ish
+Course/dotfiles-from-start-to-finish-ish
 ~/.dotfiles/Brewfile
 - [X] tap "homebrew/bundle"
 - [X] tap "homebrew/cask"
@@ -32,9 +32,10 @@
 * Ubuntu Software
 Other Software:
 - [X] visual-studio-code
-      # http://packages.microsoft.com/repos/code stable main
+      http://packages.microsoft.com/repos/code stable main
 - [X] Regolith-desktop environtment
-      # http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
+      http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
+
       [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Install Regolith]
       + install the standard variant of Regolith Desktop from the release PPA:
         #+begin_src
@@ -168,7 +169,7 @@ What is Flatpak?
 - Location? Where applications are stored by them?
 
 * Via Ubutu Package manager
-# GNU/Linux Debian and Ubuntu based distributions
+GNU/Linux Debian and Ubuntu based distributions
 
 ** How to install
 #+begin_src
@@ -194,7 +195,8 @@ sudo snap install --classic code # or code-insiders
 #+end_src
 
 * Via PPA
-# Installing Visual Studio Code with `apt`
+Installing Visual Studio Code with `apt`
+
 Download and install the `.deb package (64-bit)` from official software website:
 
 ** How to install
