@@ -201,14 +201,15 @@ Download and install the `.deb package (64-bit)` from official software website:
 
 ** How to install
 [[https://code.visualstudio.com/docs/setup/linux]][Visual Studio Code on Linux]
+
 [[https://doc.ubuntu-fr.org/visual_studio_code]][Wiki ubuntu-fr | Installation | Visual Studio Code]
 E.g: The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to<br>
 download and install the `.deb package (64-bit)`, either through the graphical software center<br>
-if it's available,or through the command line with...
+if it's available,or through the command line with:
 
-Installing the .deb package will automatically install the apt repository and<br>
-signing key to enable auto-updating using the system's package manager.<br>
-Alternatively, the repository and key can also be installed manually with the following script...
+Installing the .deb package will automatically install the apt repository and
+signing key to enable auto-updating using the system's package manager.
+Alternatively, the repository and key can also be installed manually with the following script:
 
 #+begin_src
 pwd
