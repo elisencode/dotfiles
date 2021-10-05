@@ -29,6 +29,12 @@ Course/dotfiles-from-start-to-finish-ish
 - [ ] dropbox
 - [ ] gitkraken
 - [ ] google-chrome
+      + [[https://doc.ubuntu-fr.org/google_chrome]]
+      + "Google Chrome est le navigateur internet propriétaire développé par Google sur la base du navigateur libre Chromium.
+      Il n'est pas recommandé de l'utiliser, étant donné que des /problèmes de confidentialité sont très présents/.
+      Si vous utilisez Google Chrome sur Windows ou macOS,
+      utilisez plutôt Chromium, qui récolte moins de données personnelles que Chrome,
+      ou encore Firefox, qui ne récolte rien du tout, et qui est le navigateur par défaut d'Ubuntu." 
 - [ ]
 
 * Ubuntu Software
@@ -44,10 +50,40 @@ Other Software:
         $ sudo add-apt-repository ppa:regolith-linux/release
         $ sudo apt install regolith-desktop-standard
         #+end_src
-- [ ] google-chrome
+- [X] Chromium Web Browser
       + [[https://doc.ubuntu-fr.org/google_chrome]]
-- [ ] 
+- [ ]
+- [ ]
 
+** How to get a list of all repositories and PPAs?
+[[https://askubuntu.com/questions/148932/how-can-i-get-a-list-of-all-repositories-and-ppas-from-the-command-line-into-an]]
+
+[[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
+
+- RTFM: `man apt-add-repository'
+- RTFM: `man apt'
+- look into:
+  + `/etc/apt/sources.list'
+  + `/etc/apt/sources.list.d/'
+- `ls -lAFh /usr/local/share'
+- `ls -lAFh /etc/apt'
+
+** How to listppa Script to get all the PPA installed on a system ready to share for reininstall?
+#+begin_src
+# Create shell script fonctions "list-apt-repositories":
+# - lists all repisitories in "/ect/sources.list"
+# - and "/etc/sources.list.d/*.list"
+# - to show only the PPAs: can add `--ppa-only'
+# - PPAs are automatically transformed to `ppa:USER/REPO' format
+
+# 1. list_sources
+# 2. list_ppa
+   
+# Make an install script, pipe into another script "make-apt-repository-install-script":
+# - generated script supports the `-y/yes' argument for non-interactive use (see `add-apt-repository'(1))
+# - xargs -d'\n' printf "add-apt-repository \$y '%s'\n"
+
+#+end_src
 ** `apt-mark showmanual' will print a list of manually installed packages
 [[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
 
@@ -61,6 +97,7 @@ cd ~/Desktop
 mkdir packages
 
 apt-mark showmanual > ~/Desktop/packages/list-manually-installed.txt
+
 #+end_src
 
 ** Apt-Get List Installed Packages - List All Installed Packages with *apt* on Ubuntu
@@ -130,22 +167,26 @@ Lists can contain checkboxes [ ], [-], [X].
 - [ ] not started
 - [-] in progress
 - [X] complete
+
 #+end_src
 
 Lists can contains tags (and checkboxes at the same time).
 #+begin_src
 - [ ] fruits :: get apples
 - [ ] veggies :: get carrots
+
 #+end_src
 ** Links
 #+begin_src
 [[https://orgmode.org][a nice website]]
 [[file:~/Pictures/dank-meme.png]]
 [[earlier heading][an earlier heading in the document]]
+
 #+end_src
 ** Images
 #+begin_src
 [[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
+
 #+end_src
 ** Blocks
 ** Tables
@@ -243,6 +284,7 @@ apt list
 sudo apt-get install <package name>
 # or
 sudo apt install <package name>
+
 #+end_src
 
 * Via Snap
@@ -253,6 +295,7 @@ E.g: Visual Studio Code is officially distributed as a Snap package in the Snap 
 ** How to install
 #+begin_src
 sudo snap install --classic code # or code-insiders
+
 #+end_src
 
 * Via PPA
@@ -280,6 +323,7 @@ cd ~    # or `cd`
 # Create a `src/` directory to store applications to install/uninstall/remove manually
 mkdir ~/src/
 cd ~/src/
+
 #+end_src
 
 #+begin_src
@@ -288,6 +332,7 @@ sudo apt install ./<file>.deb
 # If you're on an older Linux distribution, you will need to run this instead:
 # sudo dpkg -i <file>.deb
 # sudo apt-get install -f # Install dependencies
+
 #+end_src
 
 * Via ISO installs
