@@ -323,15 +323,30 @@ What is Flatpak?
 ** External sources, PPAs or packages downloaded from websites
 [[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
 - Are Snap and Flatpak apps safe to install?
+  + both snaps and Flatpaks is that they will bring in any libraries they need to run inside their own folders.
+    Snaps and Flatpaks are *self-contained* and will not touch any of your system files or libraries.
+  + The disadvantage to this is that the programs might be bigger than
+    a non snap or Flatpak version but the trade off is that you don't have to
+    worry about it affecting anything else, not even other snaps or Flatpak.
+    If the app is broken because it brought in bad libraries or
+    for any other reason you just uninstall it and it is completely gone.  
 - Official repos for such:
   + Snaps have the https://snapcraft.io/ repo.
     This is run by Canonical, the same people that build Ubuntu.
+  + using a snap allows me to /*avoid cluttering apt with PPA*/ that I can avoid using.  
   + Flatpaks have an official repo at https://flathub.org/ . 
     Flatpaks were developed by Redhat but I don't know if they manage the flathub repo or not.
 - Stability, maintained by ?
 - Update, upgrade?
 - Run slowly or fast?
 - Location? Where applications are stored by them?
+  + system-wide (global) installs:
+  + on the local side:
+  
+  PPA:
+  - it brought in newer libraries as dependencies that
+    your native programs were unable to use or overwrote your installed libraries with
+    older ones that were too outdated to be used by your native Ubuntu.
 
 * Via Ubuntu Package manager
 GNU/Linux Debian and Ubuntu based distributions
