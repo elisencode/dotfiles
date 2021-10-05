@@ -4,7 +4,7 @@
 #+author: ELISE N
 #+date: 2021-10-04 Mon
 #+seq_todo: TODO() | IN-PROGRESS() | WAINTING(w) | CANCELLED(c) | DONE(d)
-#+options: toc:t
+#+options: toc:nil
 
 * Lists 
 Course/dotfiles-from-start-to-finish-ish
