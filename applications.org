@@ -281,7 +281,7 @@ DPKG (Debian Package Management System):
 
 - apt = most command used commanand options from apt-get and apt-cache.
 - apt is a subset of apt-get and apt-cache commands
-- apt-get won't be deprecated, as a regumar user, you should start using apt more ofter.
+- apt-get won't be deprecated, as a reguar user, you should start using apt more ofter.
 
 | new apt command | function of the command                                  |
 |-----------------+----------------------------------------------------------|
