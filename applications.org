@@ -152,88 +152,6 @@ sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_
    - Use the *grep* program to search for a specific package:
      + `sudo dpkg -l | grep -i apache` 
 
-* Welcome to Org mode
-[[Quickstart ]][https://orgmode.org/quickstart.html]
-
-* Quickstart
-** Preamble
-** Heading
-** Markup
-- *Bold*
-- /italic/
-- _underline_
-- +strikethrough+
-- can _/*combine*/_ the basic markup in any order,
-- however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers
-  if they are present since their contents are interpreted =_literally_=.
-
-#+begin_src
-- *Bold*
-- /italic/
-- _underline_
-- +strikethrough+
-- can _/*combine*/_ the basic markup in any order,
-- however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers
-  if they are present since their contents are interpreted =_literally_=.
-#+end_src
-** Lists
-Ordered and unordered bullets can be nested in any order:
-- Unordered lists start with `+`, `-`, or `*`[^1].
-- Ordered lists start with `1.`, `1)`, `A.`, or `A)`.
-
-Lists can contain checkboxes [ ], [-], [X].
-#+begin_src
-- [ ] not started
-- [-] in progress
-- [X] complete
-
-#+end_src
-
-Lists can contains tags (and checkboxes at the same time).
-#+begin_src
-- [ ] fruits :: get apples
-- [ ] veggies :: get carrots
-
-#+end_src
-** Links
-#+begin_src
-[[https://orgmode.org][a nice website]]
-[[file:~/Pictures/dank-meme.png]]
-[[earlier heading][an earlier heading in the document]]
-
-#+end_src
-** Images
-#+begin_src
-[[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
-
-#+end_src
-** Blocks
-** Tables
-| Tool         | Literate programming? | Reproducible Research? | Languages |
-|--------------+-----------------------+------------------------+-----------|
-| Javadoc      | partial               | no                     | Java      |
-| Haskell .lhs | partial               | no                     | Haskell   |
-| noweb        | yes                   | no                     | any       |
-| Sweave       | partial               | yes                    | R         |
-| Org-mode     | yes                   | yes                    | any       |
-
-#+begin_src
-| Tool         | Literate programming? | Reproducible Research? | Languages |
-|--------------+-----------------------+------------------------+-----------|
-| Javadoc      | partial               | no                     | Java      |
-| Haskell .lhs | partial               | no                     | Haskell   |
-| noweb        | yes                   | no                     | any       |
-| Sweave       | partial               | yes                    | R         |
-| Org-mode     | yes                   | yes                    | any       |
-
-#+end_src
-** Comments
-# comments invisible
-#+begin_src
-# comments invisible
-
-#+end_src
-** Macros
 
 * Repositories and package management
 [[https://itsfoss.com/ppa-guide/]][PPA GUIDE]
@@ -275,7 +193,7 @@ DPKG (Debian Package Management System):
 
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
-RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df"
+RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df", "man dpkg"
 
 What is apt?
 - APT mostly obtains packages from a distribution's official repositories.
@@ -481,6 +399,89 @@ sudo apt install ./<file>.deb
 * Via ISO installs
 
 * Via `git clone` source code
+
+* Welcome to Org mode
+[[Quickstart ]][https://orgmode.org/quickstart.html]
+
+* Quickstart
+** Preamble
+** Heading
+** Markup
+- *Bold*
+- /italic/
+- _underline_
+- +strikethrough+
+- can _/*combine*/_ the basic markup in any order,
+- however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers
+  if they are present since their contents are interpreted =_literally_=.
+
+#+begin_src
+- *Bold*
+- /italic/
+- _underline_
+- +strikethrough+
+- can _/*combine*/_ the basic markup in any order,
+- however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers
+  if they are present since their contents are interpreted =_literally_=.
+#+end_src
+** Lists
+Ordered and unordered bullets can be nested in any order:
+- Unordered lists start with `+`, `-`, or `*`[^1].
+- Ordered lists start with `1.`, `1)`, `A.`, or `A)`.
+
+Lists can contain checkboxes [ ], [-], [X].
+#+begin_src
+- [ ] not started
+- [-] in progress
+- [X] complete
+
+#+end_src
+
+Lists can contains tags (and checkboxes at the same time).
+#+begin_src
+- [ ] fruits :: get apples
+- [ ] veggies :: get carrots
+
+#+end_src
+** Links
+#+begin_src
+[[https://orgmode.org][a nice website]]
+[[file:~/Pictures/dank-meme.png]]
+[[earlier heading][an earlier heading in the document]]
+
+#+end_src
+** Images
+#+begin_src
+[[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
+
+#+end_src
+** Blocks
+** Tables
+| Tool         | Literate programming? | Reproducible Research? | Languages |
+|--------------+-----------------------+------------------------+-----------|
+| Javadoc      | partial               | no                     | Java      |
+| Haskell .lhs | partial               | no                     | Haskell   |
+| noweb        | yes                   | no                     | any       |
+| Sweave       | partial               | yes                    | R         |
+| Org-mode     | yes                   | yes                    | any       |
+
+#+begin_src
+| Tool         | Literate programming? | Reproducible Research? | Languages |
+|--------------+-----------------------+------------------------+-----------|
+| Javadoc      | partial               | no                     | Java      |
+| Haskell .lhs | partial               | no                     | Haskell   |
+| noweb        | yes                   | no                     | any       |
+| Sweave       | partial               | yes                    | R         |
+| Org-mode     | yes                   | yes                    | any       |
+
+#+end_src
+** Comments
+# comments invisible
+#+begin_src
+# comments invisible
+
+#+end_src
+** Macros
 
 * Footnotes:
 [^1] `*` cannot be used to start a plain list if it is immediatly
