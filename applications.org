@@ -28,6 +28,7 @@ Course/dotfiles-from-start-to-finish-ish
 - [ ] alfred
 - [ ] dropbox
 - [ ] gitkraken
+      + [[https://support.gitkraken.com/how-to-install/]]
 - [ ] google-chrome
       + [[https://doc.ubuntu-fr.org/google_chrome]]
       + "Google Chrome est le navigateur internet propriétaire développé par Google sur la base du navigateur libre Chromium.
@@ -40,7 +41,7 @@ Course/dotfiles-from-start-to-finish-ish
 * Ubuntu Software
 
 Other Software:
-- [X] visual-studio-code
+- [X] visual-studio-code `code`
       + http://packages.microsoft.com/repos/code stable main
 - [X] Regolith-desktop environtment
       + http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
@@ -50,10 +51,23 @@ Other Software:
         $ sudo add-apt-repository ppa:regolith-linux/release
         $ sudo apt install regolith-desktop-standard
         #+end_src
-- [X] Chromium Web Browser
+- [X] Chromium Web Browser -via-> snap
       + [[https://doc.ubuntu-fr.org/google_chrome]]
-- [ ]
-- [ ]
+- [X] firefox
+- [X] brave-browser
+- [X] intellij-idea-community -via-> snap
+- [X] atome
+- [ ] conda
+      + [[https://docs.conda.io/en/latest/]]
+- [ ] anaconda
+      + [[https://docs.anaconda.com/anaconda/install/index.html]]
+- [] vim
+- [] emacs
+- [] LaTex
+- [] TeXstudio
+     + [[https://www.texstudio.org/]]
+- []
+- []
 
 ** How to get a list of all repositories and PPAs?
 [[https://askubuntu.com/questions/148932/how-can-i-get-a-list-of-all-repositories-and-ppas-from-the-command-line-into-an]]
@@ -291,6 +305,9 @@ sudo apt install <package name>
 [[https://snapcraft.io/code]]
 
 E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
+
+- `snap list`
+- RTFM: `man snap`
 
 ** How to install
 #+begin_src
