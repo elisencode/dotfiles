@@ -294,7 +294,15 @@ RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df"
 | apt search      | apt-cache search        | Searches for the program |
 | apt show        | apt-cache show          | Show package details     |
 
-** Ubuntu Snap vs Apt vs Flatpak
+** External sources, PPAs or packages downloaded from websites
+
+1. Ubuntu Apt
+2. Ubuntu Snap
+3. PPA with `apt install`
+4. homebrew
+5. Flatpak
+6. git clone
+7. ISO
 
 [[https://snapcraft.io/about]][snapcrat]
 
@@ -331,7 +339,6 @@ What is PPA?
 
 What is Flatpak?
 
-** External sources, PPAs or packages downloaded from websites
 [[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
 - Are Snap and Flatpak apps safe to install?
   + both snaps and Flatpaks is that they will bring in any libraries they need to run inside their own folders.
