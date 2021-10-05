@@ -228,7 +228,11 @@ Lists can contains tags (and checkboxes at the same time).
 
 #+end_src
 ** Comments
-`#`
+# comments invisible
+#begin_src
+# comments invisible
+
+#+end_src
 ** Macros
 
 * Repositories and package management
