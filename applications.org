@@ -209,6 +209,24 @@ Lists can contains tags (and checkboxes at the same time).
 #+end_src
 ** Blocks
 ** Tables
+| Tool         | Literate programming? | Reproducible Research? | Languages |
+|--------------+-----------------------+------------------------+-----------|
+| Javadoc      | partial               | no                     | Java      |
+| Haskell .lhs | partial               | no                     | Haskell   |
+| noweb        | yes                   | no                     | any       |
+| Sweave       | partial               | yes                    | R         |
+| Org-mode     | yes                   | yes                    | any       |
+
+#+begin_src
+| Tool         | Literate programming? | Reproducible Research? | Languages |
+|--------------+-----------------------+------------------------+-----------|
+| Javadoc      | partial               | no                     | Java      |
+| Haskell .lhs | partial               | no                     | Haskell   |
+| noweb        | yes                   | no                     | any       |
+| Sweave       | partial               | yes                    | R         |
+| Org-mode     | yes                   | yes                    | any       |
+
+#+end_src
 ** Comments
 `#`
 ** Macros
@@ -247,6 +265,10 @@ DPKG (Debian Package Management System):
 
 
 ** `sudo apt` vs `sudo apt-get`
+[[https://itsfoss.com/apt-vs-apt-get-difference/]]
+
+> - apt is a subset of apt-get and apt-cache commands
+> - apt-get won't be deprecated, as a regumar user, you should start using apt more ofter.
 
 ** Ubuntu Snap vs Apt vs Flatpak
 
