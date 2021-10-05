@@ -319,6 +319,13 @@ Hybrid system that mixes and matches snaps and traditional DEB-based installatio
 
 [[https://fr.wikipedia.org/wiki/Snap_(gestionnaire_de_paquet)]]
 
+Apps, apps, everywhere:
+- "The Linux desktop has seen great advances in *desktop app containerization* and
+  *process-isolating sandbox-technologies*. Keeping programs from getting hold of 
+  each other’s environments and files can greatly /improve security/
+  if something where to go wrong with a program.
+  /Flatpak and Snap are the two leading implementations on the desktop/."
+
 What is Snap, snaps, snapd?
 - “Snap” refers to both the snap command and a snap installation file.
   A snap bundles an application and all its dependents into one compressed file.
@@ -354,6 +361,10 @@ What is PPA?
 What is Flatpak?
 
 [[https://merlijn.sebrechts.be/blog/2020-07-03-snap-vs-flatpak/]]
+
+[[https://www.ctrl.blog/entry/firefox-linux-flatpak-snap.html]]
+
+[[https://www.techrepublic.com/article/why-snap-and-flatpak-are-so-important-to-linux/]]
 
 [[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
 
