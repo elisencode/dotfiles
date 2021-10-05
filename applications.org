@@ -225,6 +225,12 @@ Hybrid system that mixes and matches snaps and traditional DEB-based installatio
 5. Flatpak
 6. git clone
 7. ISO
+8. install from source
+   - `./configure`
+   - make
+   - make install
+   - dpkg -i pkg.deb
+   - rpm -Uvh pkg.rpm
 
 
 [[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
