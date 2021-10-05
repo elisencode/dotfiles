@@ -282,10 +282,11 @@ With apt, you get all the necessary tools in one place. "pleasant for end users"
 > - apt is a subset of apt-get and apt-cache commands
 > - apt-get won't be deprecated, as a regumar user, you should start using apt more ofter.
 
-| new apt command | function of the command ---------------------------------|
+| new apt command | function of the command                                  |
 |-----------------+----------------------------------------------------------|
 | apt list        | Lists packages with criteria (installed, upgradable etc) |
 | apt edit-source | Edits sources list                                       |
+
 
 | apt command     | the command it replaces | function of the command  |
 |-----------------+----------------------------------------------------|
