@@ -76,6 +76,10 @@ Other Software:
 
 - RTFM: `man apt-add-repository'
 - RTFM: `man apt'
+- SEE ALSO
+      + apt-get(8), apt-cache(8), sources.list(5), apt.conf(5), apt-config(8),
+      + The APT User's guide in /usr/share/doc/apt-doc/, apt_preferences(5),
+      + the APT Howto.
 - look into:
   + `/etc/apt/sources.list'
   + `/etc/apt/sources.list.d/'
