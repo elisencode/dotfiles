@@ -341,14 +341,22 @@ What is Flatpak?
 - Stability, maintained by ?
 - Update, upgrade?
 - Run slowly or fast?
+- garbage, outdated or insecure apps?
 - Location? Where applications are stored by them?
   + system-wide (global) installs:
   + on the local side:
   
-  PPA:
-  - it brought in newer libraries as dependencies that
+- PPA:
+  + it brought in newer libraries as dependencies that
     your native programs were unable to use or overwrote your installed libraries with
     older ones that were too outdated to be used by your native Ubuntu.
+
+- Summary: Before install app:
+  + Learn to *decrypt* the *source code*.
+  + check author, current version/last update for snap version
+  + and same things for mainstream version,
+  + permissions (it may be "Classic" app with all dangerous permissions).
+  + Same things for PPA, they are not any trusted quality control.
 
 * Via Ubuntu Package manager
 GNU/Linux Debian and Ubuntu based distributions
