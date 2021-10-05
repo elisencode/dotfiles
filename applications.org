@@ -275,7 +275,7 @@ DPKG (Debian Package Management System):
 
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
-RTFM: "man apt", "man apt-get", "man apt-cache", "man snap" 
+RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df"
 
 - apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
 - with apt, you get all the necessary tools in one place. "pleasant for end users".
@@ -298,15 +298,24 @@ RTFM: "man apt", "man apt-get", "man apt-cache", "man snap"
 
 [[https://snapcraft.io/about]][snapcrat]
 
+[[https://www.howtogeek.com/670084/what-you-need-to-know-about-snaps-on-ubuntu-20.04/]]
+
 What is Snap?
+- “Snap” refers to both the snap command and a snap installation file.
+  A snap bundles an application and all its dependents into one compressed file.
+  The dependents might be library files, web or database servers,
+  or anything else an application must have to launch and run.
 - Snap is developed by *Canonical* for *operating systems* that use
   the *Linux* kernel. The packages, called /snaps/.
 - Snap is *a software package and deployment system* that uses
-  self-contained packages called snaps to deliver software to users.
-- Snap enables developpers to deliver their apps directly to users via Snap Store.  
+  *self-contained packages* called snaps to deliver software to users.
+- Snap enables developpers to deliver their apps directly to users via Snap Store.
+- avoid *Dependency hell*.
+
+What is snapd?
 
 What is apt?
-- APT mostly obains packages from a distribution's official repositories.
+- APT mostly obtains packages from a distribution's official repositories.
 
 [[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
 
@@ -340,7 +349,13 @@ What is Flatpak?
     Flatpaks were developed by Redhat but I don't know if they manage the flathub repo or not.
 - Stability, maintained by ?
 - Update, upgrade?
-- Run slowly or fast?
+- Snaps are:
+  + the installation files are bigger than the traditional Debian package manager (DEB) files.
+  + use more hard drive real estate.
+  + Launching applications is slower.
+  + during the installation. The snaps took a lot longer to download.
+  + updated automatically.
+  + not always "official". They're ofter built by well-intentioned voluteers.
 - garbage, outdated or insecure apps?
 - Location? Where applications are stored by them?
   + system-wide (global) installs:
