@@ -366,6 +366,8 @@ What is Flatpak?
     your native programs were unable to use or overwrote your installed libraries with
     older ones that were too outdated to be used by your native Ubuntu.
 
+- hybrid system that mixes and matches snaps and traditional DEB-based installations?
+
 - Summary: Before install app:
   + Learn to *decrypt* the *source code*.
   + check author, current version/last update for snap version
