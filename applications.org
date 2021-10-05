@@ -317,7 +317,9 @@ Hybrid system that mixes and matches snaps and traditional DEB-based installatio
 
 [[https://www.howtogeek.com/670084/what-you-need-to-know-about-snaps-on-ubuntu-20.04/]]
 
-What is Snap?
+[[https://fr.wikipedia.org/wiki/Snap_(gestionnaire_de_paquet)]]
+
+What is Snap, snaps, snapd?
 - “Snap” refers to both the snap command and a snap installation file.
   A snap bundles an application and all its dependents into one compressed file.
   The dependents might be library files, web or database servers,
@@ -329,16 +331,14 @@ What is Snap?
 - Snap enables developpers to deliver their apps directly to users via Snap Store.
 - avoid *Dependency hell*.
 
-- Snaps are:
-  + using a snap allows me to /*avoid cluttering apt with PPA*/ that I can avoid using.  
-  + the installation files are bigger than the traditional Debian package manager (DEB) files.
+- Snaps are packages:
+  + using a snap allows me to /avoid cluttering *apt with PPA*/ that I can avoid using.  
+  + the installation files are bigger than the traditional *Debian package manager (DEB) files*.
   + use more hard drive real estate.
-  + Launching applications is slower.
   + during the installation. The snaps took a lot longer to download.
+  + Launching applications is slower.
   + updated automatically.
   + not always "official". They're ofter built by well-intentioned voluteers.
-
-What is snapd?
 
 What is PPA?
 - Personal Package Archives (PPAs) are software repositories designed for
@@ -377,7 +377,18 @@ Are Snap and Flatpak apps safe to install?
 - Location? Where applications are stored by them?
   + system-wide (global) installs:
   + on the local side:
-  
+ 
+What is homebrew, brew bundle, brew file, brew tap, homebrew-cask, homebrew?
+[[https://github.com/Homebrew/homebrew-bundle]]
+- Brew Bundle : A Homebrew subcommand to run your Brewfile.
+- Brew file : A file where you define softwares and applications you want to install.
+- Brew tap : A Homebrew subcommand to add additional repositories which are not in the official formulae.
+  + Taps (Repositories)
+- Homebrew-cask : A tool which helps you to install Mac applications by using Homebrew.
+  + Casks (Applications) # Error: Installing casks is supported only on macOS
+- Homebrew : A package manager which helps you to install software. 
+  + Brews (Packages) (Formulae)
+
 Summary: Before install app:
   - Learn to *decrypt* the *source code*.
   - check author, current version/last update for *snap version*
