@@ -32,6 +32,7 @@ Course/dotfiles-from-start-to-finish-ish
 - [ ]
 
 * Ubuntu Software
+
 Other Software:
 - [X] visual-studio-code
       + http://packages.microsoft.com/repos/code stable main
@@ -46,6 +47,54 @@ Other Software:
 - [ ] google-chrome
       + [[https://doc.ubuntu-fr.org/google_chrome]]
 - [ ] 
+
+** `apt-mark showmanual' will print a list of manually installed packages
+[[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
+
+RTFM: `man apt-mark'
+
+To output the result into a text file:
+
+#+begin_src
+pwd
+cd ~/Desktop
+mkdir packages
+
+apt-mark showmanual > ~/Desktop/packages/list-manually-installed.txt
+#+end_src
+
+** Apt-Get List Installed Packages - List All Installed Packages with *apt* on Ubuntu
+
+[[https://www.rosehosting.com/blog/list-all-installed-packages-with-apt-on-ubuntu/]]
+
+RTFM: `man apt'
+
+To output the result into a text file:
+
+#+begin_src
+pwd
+cd ~/Desktop
+mkdir packages
+
+sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_on_ubuntu.txt
+#+end_src
+
+1. List the installed software packages on Ubuntu:
+   -`sudo apt list --installed'
+2. Use the LESS program: to read the entire output
+   - `sudo apt list --installed | less
+3. Use the GREP command: list all packages that include Apache
+   - `sudo apt list --installed | grep -i apache
+4. Use the DPKG program: another alternative that list the installed software packages
+   on your *Ubuntu VPS* in the *dpkg* command 
+   - `sudo dpkg -l'
+5. The output of the command *dpkg* will provide information:
+   - name of the package
+   - version
+   - architecture
+   - a short description of the package
+   - Use the *grep* program to search for a specific package:
+     + `sudo dpkg -l | grep -i apache 
 
 * Welcome to Org mode
 [[Quickstart ]][https://orgmode.org/quickstart.html]
