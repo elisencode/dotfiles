@@ -272,15 +272,16 @@ DPKG (Debian Package Management System):
 [[https://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get]]
 
 [[https://debian-handbook.info/browse/stable/sect.apt-get.html]][aptitude, apt-get, and apt Commands]
-> apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
+
+- apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
 
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
 With apt, you get all the necessary tools in one place. "pleasant for end users".
 
-> - apt = most command used commanand options from apt-get and apt-cache.
-> - apt is a subset of apt-get and apt-cache commands
-> - apt-get won't be deprecated, as a regumar user, you should start using apt more ofter.
+- apt = most command used commanand options from apt-get and apt-cache.
+- apt is a subset of apt-get and apt-cache commands
+- apt-get won't be deprecated, as a regumar user, you should start using apt more ofter.
 
 | new apt command | function of the command                                  |
 |-----------------+----------------------------------------------------------|
