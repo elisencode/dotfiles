@@ -277,7 +277,7 @@ DPKG (Debian Package Management System):
 
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
-With apt, you get all the necessary tools in one place. "pleasant for end users".
+- with apt, you get all the necessary tools in one place. "pleasant for end users".
 
 - apt = most command used commanand options from apt-get and apt-cache.
 - apt is a subset of apt-get and apt-cache commands
