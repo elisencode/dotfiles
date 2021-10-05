@@ -229,7 +229,7 @@ Lists can contains tags (and checkboxes at the same time).
 #+end_src
 ** Comments
 # comments invisible
-#begin_src
+#+begin_src
 # comments invisible
 
 #+end_src
