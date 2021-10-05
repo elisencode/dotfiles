@@ -273,12 +273,12 @@ DPKG (Debian Package Management System):
 
 [[https://debian-handbook.info/browse/stable/sect.apt-get.html]][aptitude, apt-get, and apt Commands]
 
-- apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
-
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
-- with apt, you get all the necessary tools in one place. "pleasant for end users".
+RTFM: "man apt", "man apt-get", "man apt-cache", "man snap" 
 
+- apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
+- with apt, you get all the necessary tools in one place. "pleasant for end users".
 - apt = most command used commanand options from apt-get and apt-cache.
 - apt is a subset of apt-get and apt-cache commands
 - apt-get won't be deprecated, as a regular user, you should start using apt more ofter.
