@@ -131,7 +131,7 @@ sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_
    - architecture
    - a short description of the package
    - Use the *grep* program to search for a specific package:
-     + `sudo dpkg -l | grep -i apache 
+     + `sudo dpkg -l | grep -i apache` 
 
 * Welcome to Org mode
 [[Quickstart ]][https://orgmode.org/quickstart.html]
