@@ -83,6 +83,7 @@ Other Software:
 - look into:
   + `/etc/apt/sources.list'
   + `/etc/apt/sources.list.d/'
+  + `/etc/apt/preferences.d/`
 - `ls -lAFh /usr/local/share'
 - `ls -lAFh /etc/apt'
 
@@ -307,6 +308,8 @@ sudo apt install <package name>
 
 * Via Snap
 [[https://snapcraft.io/code]]
+
+[[https://www.linuxtricks.fr/wiki/ubuntu-supprimer-et-bloquer-les-snaps]]
 
 E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
 
