@@ -277,6 +277,8 @@ DPKG (Debian Package Management System):
 
 RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df"
 
+What is apt?
+- APT mostly obtains packages from a distribution's official repositories.
 - apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
 - with apt, you get all the necessary tools in one place. "pleasant for end users".
 - apt = most command used commanand options from apt-get and apt-cache.
@@ -296,6 +298,8 @@ RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df"
 
 ** External sources, PPAs or packages downloaded from websites
 
+Hybrid system that mixes and matches snaps and traditional DEB-based installations?
+
 1. Ubuntu Apt
 2. Ubuntu Snap
 3. PPA with `apt install`
@@ -303,6 +307,11 @@ RTFM: "man apt", "man apt-get", "man apt-cache", "man snap", "man df"
 5. Flatpak
 6. git clone
 7. ISO
+
+
+[[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
+
+[[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
 
 [[https://snapcraft.io/about]][snapcrat]
 
@@ -320,14 +329,16 @@ What is Snap?
 - Snap enables developpers to deliver their apps directly to users via Snap Store.
 - avoid *Dependency hell*.
 
+- Snaps are:
+  + using a snap allows me to /*avoid cluttering apt with PPA*/ that I can avoid using.  
+  + the installation files are bigger than the traditional Debian package manager (DEB) files.
+  + use more hard drive real estate.
+  + Launching applications is slower.
+  + during the installation. The snaps took a lot longer to download.
+  + updated automatically.
+  + not always "official". They're ofter built by well-intentioned voluteers.
+
 What is snapd?
-
-What is apt?
-- APT mostly obtains packages from a distribution's official repositories.
-
-[[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
-
-[[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
 
 What is PPA?
 - Personal Package Archives (PPAs) are software repositories designed for
@@ -336,51 +347,44 @@ What is PPA?
 - The PPA allows application developers and Linux users to create their own repositories to distribute software.
   With PPA, you can easily get newer software version or software that are not available
   via the official Ubuntu repositories.
+- it brought in newer libraries as dependencies that
+  your native programs were unable to use or overwrote your installed libraries with
+  older ones that were too outdated to be used by your native Ubuntu.
 
 What is Flatpak?
 
+[[https://merlijn.sebrechts.be/blog/2020-07-03-snap-vs-flatpak/]]
+
 [[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
-- Are Snap and Flatpak apps safe to install?
-  + both snaps and Flatpaks is that they will bring in any libraries they need to run inside their own folders.
+
+Are Snap and Flatpak apps safe to install?
+  - both snaps and Flatpaks is that they will bring in any libraries they need to run inside their own folders.
     Snaps and Flatpaks are *self-contained* and will not touch any of your system files or libraries.
-  + The disadvantage to this is that the programs might be bigger than
+  - The disadvantage to this is that the programs might be bigger than
     a non snap or Flatpak version but the trade off is that you don't have to
     worry about it affecting anything else, not even other snaps or Flatpak.
     If the app is broken because it brought in bad libraries or
     for any other reason you just uninstall it and it is completely gone.  
-- Official repos for such:
-  + Snaps have the https://snapcraft.io/ repo.
-    This is run by Canonical, the same people that build Ubuntu.
-  + using a snap allows me to /*avoid cluttering apt with PPA*/ that I can avoid using.  
-  + Flatpaks have an official repo at https://flathub.org/ . 
-    Flatpaks were developed by Redhat but I don't know if they manage the flathub repo or not.
+ - Official repos for such:
+   + Snaps have the https://snapcraft.io/ repo.
+     This is run by Canonical, the same people that build Ubuntu.
+   + Flatpaks have an official repo at https://flathub.org/ . 
+     Flatpaks were developed by Redhat but I don't know if they manage the flathub repo or not.
 - Stability, maintained by ?
+- run: slow || faster
 - Update, upgrade?
-- Snaps are:
-  + the installation files are bigger than the traditional Debian package manager (DEB) files.
-  + use more hard drive real estate.
-  + Launching applications is slower.
-  + during the installation. The snaps took a lot longer to download.
-  + updated automatically.
-  + not always "official". They're ofter built by well-intentioned voluteers.
 - garbage, outdated or insecure apps?
 - Location? Where applications are stored by them?
   + system-wide (global) installs:
   + on the local side:
   
-- PPA:
-  + it brought in newer libraries as dependencies that
-    your native programs were unable to use or overwrote your installed libraries with
-    older ones that were too outdated to be used by your native Ubuntu.
-
-- hybrid system that mixes and matches snaps and traditional DEB-based installations?
-
-- Summary: Before install app:
-  + Learn to *decrypt* the *source code*.
-  + check author, current version/last update for snap version
-  + and same things for mainstream version,
-  + permissions (it may be "Classic" app with all dangerous permissions).
-  + Same things for PPA, they are not any trusted quality control.
+Summary: Before install app:
+  - Learn to *decrypt* the *source code*.
+  - check author, current version/last update for *snap version*
+  - and same things for *mainstream version*,
+  - permissions (it may be "Classic" app with all dangerous permissions).
+  - Same things for *PPA*, they are not any trusted quality control.
+  - etc
 
 * Via Ubuntu Package manager
 GNU/Linux Debian and Ubuntu based distributions
