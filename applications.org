@@ -269,6 +269,11 @@ DPKG (Debian Package Management System):
 
 
 ** `sudo apt` vs `sudo apt-get`
+[[https://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get]]
+
+[[https://debian-handbook.info/browse/stable/sect.apt-get.html]][aptitude, apt-get, and apt Commands]
+> apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
+
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
 With apt, you get all the necessary tools in one place. "pleasant for end users".
