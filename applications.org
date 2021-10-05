@@ -8,7 +8,9 @@
 
 * Lists 
 Course/dotfiles-from-start-to-finish-ish
+
 ~/.dotfiles/Brewfile
+
 - [X] tap "homebrew/bundle"
 - [X] tap "homebrew/cask"
 - [X] brew "bat"
