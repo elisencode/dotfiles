@@ -402,9 +402,8 @@ What is homebrew, brew bundle, brew file, brew tap, homebrew-cask, homebrew?
 - Homebrew : A package manager which helps you to install software. 
   + Brews (Packages) (Formulae)
 
-[[https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/]][How to verify the source of a Snap package]
-
 Summary: Before install app:
+  - [[https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/]][How to verify the source of a Snap package]
   - Learn to *decrypt* the *source code*.
   - check author, current version/last update for *snap version*
   - and same things for *mainstream version*,
