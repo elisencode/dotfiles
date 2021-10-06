@@ -6,6 +6,16 @@
 #+seq_todo: TODO() | IN-PROGRESS() | WAINTING(w) | CANCELLED(c) | DONE(d)
 #+options: toc:nil
 
+* "Tenir un fichier texte dans le quel tu listes toutes les commandes d'installation utilisé:
+"La façon de faire de Linux ne pousse pas à installer n'impoter quoi."
+
+| Date/Month/Year | How to install | Type |
+|-----------------+----------------+------|
+|E.g : 01/02/2020 apt install eclipse     |
+|E.g : 04/08/2020 snap install nesus      |
+
+- 06/10/2020 sudo snap install gitkraken --classic
+
 * Lists 
 Course/dotfiles-from-start-to-finish-ish
 
@@ -47,7 +57,10 @@ Synaptic 0.90.2 (package management software using apt):
 - Home Page
   + [[http://www.nongnu.org/synaptic/]]
 
-Other Software:
+Other Software: 
+
+Software 3.38.1 (A nice way to manage the software on your system):
+Installed:
 - [X] visual-studio-code
       + package: code
       + synaptic (package management software using apt)
@@ -305,6 +318,8 @@ Get third-party software to Ubuntu users:
    - `dpkg -i pkg.deb`
    - `rpm -Uvh pkg.rpm`
 
+[[https://openclassrooms.com/forum/sujet/snap-ou-apt]][snap ou apt (openclassrooms)]
+
 [[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
 
 [[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
@@ -435,8 +450,11 @@ sudo apt install <package name>
 
 E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
 
-- `snap list`
 - RTFM: `man snap`
+- `snap --version`
+- `snap list`
+- `snap info`
+- "snap install [install-OPTIONS]"
 
 ** How to install
 #+begin_src
