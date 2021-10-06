@@ -96,12 +96,12 @@ Other Software:
       + [[https://docs.conda.io/en/latest/]]
 - [ ] anaconda
       + [[https://docs.anaconda.com/anaconda/install/index.html]]
-- [] vim
+- [X] vim
       + package: vim
       + synaptic (package management software using apt)
         + Local/main (archive.ubuntu.com)
         + [[https://www.vim.org/]]
-- [] emacs
+- [X] emacs
       + package: emacs
       + synaptic (package management software using apt)
         + Local/universe (archive.ubuntu.com)
