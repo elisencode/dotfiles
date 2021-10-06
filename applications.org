@@ -40,10 +40,23 @@ Course/dotfiles-from-start-to-finish-ish
 
 * Ubuntu Software
 
+Synaptic 0.90.2 (package management software using apt):
+- Origin
+- All
+- Package
+- Home Page
+  + [[http://www.nongnu.org/synaptic/]]
+
 Other Software:
-- [X] visual-studio-code `code`
+- [X] visual-studio-code
+      + package: code
+      + synaptic (package management software using apt)
+        + Local/main (packages.microsoft.com)
       + http://packages.microsoft.com/repos/code stable main
 - [X] Regolith-desktop environtment
+      + synaptic (package management software using apt)
+        + LP-PPA-regolith-linux-release/hirsute
+        + LP-PPA-regolith-linux-release/now
       + http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
       + [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Install Regolith]
       + install the standard variant of Regolith Desktop from the release PPA:
@@ -51,21 +64,78 @@ Other Software:
         $ sudo add-apt-repository ppa:regolith-linux/release
         $ sudo apt install regolith-desktop-standard
         #+end_src
-- [X] Chromium Web Browser -via-> snap
+- [X] Chromium Web Browser
+      + -via-> snap
+      + package: chromium-browser
+      + synaptic (package management software using apt)
+        + Local/universe (archive.ubuntu.com)
+        + visite homepage
+          + [[https://chromium.googlesource.com/chromium/src/]]
       + [[https://doc.ubuntu-fr.org/google_chrome]]
 - [X] firefox
+      + package: firefox
+      + synaptic (package management software using apt)
+        + Local/main (archive.ubuntu.com)
 - [X] brave-browser
-- [X] intellij-idea-community -via-> snap
-- [X] atome
+      + package: brave-browser-beta
+      + synaptic (package management software using apt)
+        + Local/main (brave-browser-apt-beta.s3.brave.com)
+        + stable/main (brave-browser-apt-beta.s3.brave.com)
+- [X] intellij-idea-community
+      + -via-> snap
+      + package:
+      + synaptic (package management software using apt)
+        + ?/universe
+        + visite homepage
+          + [[https://github.com/JetBrains/intellij-community]]
+- [X] atom
+      + package:atom
+      + synaptic (package management software using apt)
+        + Local/main (packagecloud.io)
 - [ ] conda
       + [[https://docs.conda.io/en/latest/]]
 - [ ] anaconda
       + [[https://docs.anaconda.com/anaconda/install/index.html]]
 - [] vim
+      + package: vim
+      + synaptic (package management software using apt)
+        + Local/main (archive.ubuntu.com)
+        + [[https://www.vim.org/]]
 - [] emacs
-- [] LaTex
-- [] TeXstudio
-     + [[https://www.texstudio.org/]]
+      + package: emacs
+      + synaptic (package management software using apt)
+        + Local/universe (archive.ubuntu.com)
+- [X] tmux
+      + synaptic (package management software using apt)
+        + Local/main (archive.ubuntu.com)
+- [X] LaTex: pdfTeX
+      + [[https://en.wikipedia.org/wiki/PdfTeX]]
+      + [[https://www.latex-project.org/get/]]
+      + TeX Distributions: Linux
+        + texlive-full
+          + [[https://www.tug.org/texlive/]]
+- [X] TeXstudio
+      + [[https://www.texstudio.org/]]
+      + TeXstudio is an integrated writing environment for
+        creating LaTeX documents.
+- [X] virtualbox 
+     + package: vitualbox, virtualbox-dkms, virtuablox-qt
+     + synaptic (package management software using apt)
+       + Local/multiverse(archive.ubuntu.com)
+       + visite homepage
+         + [[https://www.virtualbox.org/]]
+- [X] anki
+      + package: anki
+      + synaptic (package management software using apt)
+        + Local/universe(archive.ubuntu.com)
+        + visite homepage
+          + [[https://apps.ankiweb.net/]]
+- [X] audacity
+      + package: audacity
+      + synaptic (package management software using apt)
+        + Local/universe(archive.ubuntu.com)
+        + visite homepage
+          + [[https://www.audacityteam.org/]]
 - []
 - []
 
