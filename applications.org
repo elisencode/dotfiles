@@ -288,6 +288,8 @@ What is apt?
 
 Hybrid system that mixes and matches snaps and traditional DEB-based installations?
 
+[[https://ubuntu.com/core]][What is Ubuntu Core 20?]
+
 1. Ubuntu Apt
 2. Ubuntu Snap
 3. PPA with `apt install`
