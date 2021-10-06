@@ -7,14 +7,23 @@
 #+options: toc:nil
 
 * "Tenir un fichier texte dans le quel tu listes toutes les commandes d'installation utilisé:
-"La façon de faire de Linux ne pousse pas à installer n'impoter quoi."
+
+#+begin_src
+- 06/10/2020 sudo snap install gitkraken --classic
+-
+
+#+end_src
+
+
 
 | Date/Month/Year | How to install | Type |
 |-----------------+----------------+------|
 |E.g : 01/02/2020 apt install eclipse     |
 |E.g : 04/08/2020 snap install nesus      |
 
-- 06/10/2020 sudo snap install gitkraken --classic
+"La façon de faire de Linux ne pousse pas à installer n'impoter quoi."
+
+"Sinon tes un peu niqué le jour ou tu veux faire le ménage."
 
 * Lists 
 Course/dotfiles-from-start-to-finish-ish
