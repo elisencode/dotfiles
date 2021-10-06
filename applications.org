@@ -10,6 +10,15 @@
 
 #+begin_src
 - 06/10/2020 sudo snap install gitkraken --classic
+  + link:
+    + [[https://support.gitkraken.com/how-to-install/]]
+    + [[https://snapcraft.io/gitkraken]]
+  + data location:
+    + GitKraken data is stored in
+      #+begin_src
+      /home/{user}/.gitkraken == ~/.gitkraken.
+      #+end_src
+  + run `gitkraken`
 -
 
 #+end_src
