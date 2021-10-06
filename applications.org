@@ -17,6 +17,7 @@
     + GitKraken data is stored in
       #+begin_src
       /home/{user}/.gitkraken == ~/.gitkraken.
+
       #+end_src
   + run `gitkraken`
 -
