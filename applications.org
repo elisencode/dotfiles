@@ -290,9 +290,10 @@ Hybrid system that mixes and matches snaps and traditional DEB-based installatio
 
 [[https://ubuntu.com/core]][What is Ubuntu Core 20?]
 
-1. Ubuntu Apt
+Get third-party software to Ubuntu users:
+1. Ubuntu Advanced Package Tool (Apt)
 2. Ubuntu Snap
-3. PPA with `apt install`
+3. “Personal Package Archives” (PPAs) with `apt install`
 4. homebrew
 5. Flatpak
 6. git clone
@@ -303,7 +304,6 @@ Hybrid system that mixes and matches snaps and traditional DEB-based installatio
    - `make install`
    - `dpkg -i pkg.deb`
    - `rpm -Uvh pkg.rpm`
-
 
 [[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
 
@@ -342,6 +342,12 @@ What is Snap, snaps, snapd?
   + Launching applications is slower.
   + updated automatically.
   + not always "official". They're ofter built by well-intentioned voluteers.
+
+- Is the Snap Store open source?
+  + [[https://merlijn.sebrechts.be/blog/2020-08-02-why-done-snap-store/]]
+  + part of the Snap store is still closed source.
+  + Snap itself is completely open source and many parts of the Snap store are open source
+  + The back-end hosting the snaps, however, is still proprietary.
 
 What is PPA?
 - Personal Package Archives (PPAs) are software repositories designed for
