@@ -237,9 +237,9 @@ sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_
 1. List the installed software packages on Ubuntu:
    - =sudo apt list --installed=
 2. Use the LESS program: to read the entire output
-   - =sudo apt list --installed | less
+   - =sudo apt list --installed | less=
 3. Use the GREP command: list all packages that include Apache
-   - =sudo apt list --installed | grep -i apache
+   - =sudo apt list --installed | grep -i apache=
 4. Use the DPKG program: another alternative that list the installed software packages
    on your *Ubuntu VPS* in the *dpkg* command 
    - =sudo dpkg -l=
@@ -590,9 +590,9 @@ Org mode uses #+BEGIN … #+END blocks for many purposes. Some of the basic bloc
 If you all you need is monospace text, you can use an example block.
 
 #+BEGIN_SRC
-#+begin_example
+\#+begin_example
 monospace
-#+end_example
+\#+end_example
 #+END_SRC
 
 However, example blocks do not give you the power of Org babel.
@@ -600,9 +600,9 @@ For that you need a source block. Source blocks provide
 syntax highlighting, code execution, literate programming, and more.
 
 #+BEGIN_SRC
-#+begin_src emacs-lisp
+\#+begin_src emacs-lisp
 (message "Hello world")
-#+end_src
+\#+end_src
 #+END_SRC
 ** Tables
 | Tool         | Literate programming? | Reproducible Research? | Languages |
