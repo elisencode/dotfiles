@@ -8,7 +8,6 @@
 
 * "Tenir un fichier texte dans le quel tu listes toutes les commandes d'installation utilisé:
 
-#+begin_src
 - 06/10/2020 sudo snap install gitkraken --classic
   + link:
     + [[https://support.gitkraken.com/how-to-install/]]
@@ -20,8 +19,7 @@
       #+end_src
   + run =gitkraken=
 -
-
-#+end_src
+-
 
 
 
