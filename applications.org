@@ -522,6 +522,8 @@ sudo apt install ./<file>.deb
 
 * Quickstart
 ** Preamble
+At the start of a file (before the first heading), it is common to set the title,
+author and other export options.
 #+BEGIN_SRC
 #+title: The glories of Org
 #+author: A. Org Writer
@@ -565,28 +567,43 @@ Lists can contain checkboxes [ ], [-], [X].
 - [ ] not started
 - [-] in progress
 - [X] complete
-
 #+end_src
 
 Lists can contains tags (and checkboxes at the same time).
 #+begin_src
 - [ ] fruits :: get apples
 - [ ] veggies :: get carrots
-
 #+end_src
 ** Links
 #+begin_src
 [[https://orgmode.org][a nice website]]
 [[file:~/Pictures/dank-meme.png]]
 [[earlier heading][an earlier heading in the document]]
-
 #+end_src
 ** Images
 #+begin_src
 [[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
-
 #+end_src
 ** Blocks
+Org mode uses #+BEGIN … #+END blocks for many purposes. Some of the basic blocks types quote, example, and src.
+
+If you all you need is monospace text, you can use an example block.
+
+#+BEGIN_SRC
+#+begin_example
+monospace
+#+end_example
+#+END_SRC
+
+However, example blocks do not give you the power of Org babel.
+For that you need a source block. Source blocks provide
+syntax highlighting, code execution, literate programming, and more.
+
+#+BEGIN_SRC
+#+begin_src emacs-lisp
+(message "Hello world")
+#+end_src
+#+END_SRC
 ** Tables
 | Tool         | Literate programming? | Reproducible Research? | Languages |
 |--------------+-----------------------+------------------------+-----------|
@@ -610,10 +627,53 @@ Lists can contains tags (and checkboxes at the same time).
 # comments invisible
 #+begin_src
 # comments invisible
-
 #+end_src
-** Macros
 
+Org mode has a variety of ways to add comments.
+
+- Line comments start with #.
+- Inline comments wrap @@comment:like so@@.
+- Block comments are wrapped with #+BEGIN_COMMENT and #+END_COMMENT.
+- Section comments can be created by adding the COMMENT keyword to a heading * COMMENT like so[^2].
+
+#+BEGIN_SRC
+# A line comment
+
+Example of an @@comment:inline@@ comment.
+
+Inline comments are used for end of line comments. @@comment:~#~ won't
+work@@ Since # only only works if preceeded by a newline follow by
+whitespace.
+
+#+begin_comment
+This is a block comment.
+It can span multiple line.
+As well as other markup.
+#+begin_src emacs-lisp
+(+ 1 2)
+#+end_src
+#+end_comment
+
+* A top level heading
+** COMMENT This section and subsections are commented out
+*** This heading inherits the =COMMENT= keyword
+This text is commented out
+** This heading is not commented
+This text will be exported and code blocks will run.
+#+END_SRC
+** Macros
+#+BEGIN_SRC
+#+macro: attn _*/$1/*_
+{{{attn(Attention! This text gets all the markup!)}}}
+
+#+html_head: <style>.red{color:red;}</style>
+#+latex_header: \usepackage{xcolor}
+#+macro: red @@html:<span class="red">$1</span>@@@@latex:\textcolor{red}{$1}@@
+Regular text. {{{red(This text will be red.)}}} More regular text.
+#+END_SRC
 * Footnotes:
 [^1] =*= cannot be used to start a plain list if it is immediatly
 preceded by a newline because it will be interpreted as a heading.
+
+[^2] There are a number of more granular ways to control the exact behavior of headings,
+including use of the special tags =:ARCHIVE:= and =:noexport:=.
