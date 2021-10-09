@@ -33,6 +33,7 @@
 "Sinon tes un peu niqué le jour ou tu veux faire le ménage."
 
 * Lists 
+
 Course/dotfiles-from-start-to-finish-ish
 
 ~/.dotfiles/Brewfile
@@ -169,6 +170,7 @@ Installed:
 - []
 
 ** How to get a list of all repositories and PPAs?
+
 [[https://askubuntu.com/questions/148932/how-can-i-get-a-list-of-all-repositories-and-ppas-from-the-command-line-into-an]]
 
 [[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
@@ -187,6 +189,7 @@ Installed:
 - =ls -lAFh /etc/apt=
 
 ** How to listppa Script to get all the PPA installed on a system ready to share for reininstall?
+
 #+begin_src
 # Create shell script fonctions "list-apt-repositories":
 # - lists all repisitories in "/ect/sources.list"
@@ -201,7 +204,9 @@ Installed:
 # - generated script supports the =-y/yes= argument for non-interactive use (see =add-apt-repository=(1))
 # - xargs -d'\n' printf "add-apt-repository \$y '%s'\n"
 #+end_src
+
 ** =apt-mark showmanual= will print a list of manually installed packages
+
 [[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
 
 RTFM: =man apt-mark=
@@ -251,6 +256,7 @@ sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_
 
 
 * Repositories and package management
+
 [[https://itsfoss.com/ppa-guide/]][PPA GUIDE]
 
 What is a repository?
@@ -264,6 +270,7 @@ Each Ubuntu version has its own official set of four repositories:
 4. *Multiverse* - Software restrited by copyright or legal issues.
 
 ** Linux Package Managers
+
 [[https://www.tecmint.com/linux-package-managers/]][linux-package-managers]
 
 DPKG (Debian Package Management System):
@@ -284,6 +291,7 @@ DPKG (Debian Package Management System):
 
 
 ** =sudo apt= vs =sudo apt-get=
+
 [[https://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get]]
 
 [[https://debian-handbook.info/browse/stable/sect.apt-get.html]][aptitude, apt-get, and apt Commands]
@@ -441,9 +449,11 @@ Summary: Before install app:
   - etc
 
 * Via Ubuntu Package manager
+
 GNU/Linux Debian and Ubuntu based distributions
 
 ** How to install
+
 #+begin_src
 sudo updatedb
 sudo apt-get update
@@ -457,6 +467,7 @@ sudo apt install <package name>
 #+end_src
 
 * Via Snap
+
 [[https://snapcraft.io/code]]
 
 [[https://www.linuxtricks.fr/wiki/ubuntu-supprimer-et-bloquer-les-snaps]]
@@ -471,17 +482,20 @@ E.g: Visual Studio Code is officially distributed as a Snap package in the Snap 
 - "snap install [install-OPTIONS]"
 
 ** How to install
+
 #+begin_src
 sudo snap install --classic code # or code-insiders
 
 #+end_src
 
 * Via PPA
+
 Installing Visual Studio Code with =apt=
 
 Download and install the =.deb package (64-bit)= from official software website:
 
 ** How to install
+
 [[https://code.visualstudio.com/docs/setup/linux]][Visual Studio Code on Linux]
 
 [[https://doc.ubuntu-fr.org/visual_studio_code]][Wiki ubuntu-fr | Installation | Visual Studio Code]
@@ -516,17 +530,22 @@ sudo apt install ./<file>.deb
 * Via =git clone= source code
 
 * Welcome to Org mode
+
 [[Quickstart ]][https://orgmode.org/quickstart.html]
 
 * Quickstart
+
 ** Preamble
+
 At the start of a file (before the first heading), it is common to set the title,
 author and other export options.
 #+BEGIN_SRC
 #+title: The glories of Org
 #+author: A. Org Writer
 #+END_SRC
+
 ** Heading
+
 #+BEGIN_SRC
 * Welcome to Org-mode
 ** Sub-heading
@@ -537,7 +556,9 @@ Each extra ~*~ increases the depth by one level.
 * TODO Promulgate Org to the world
 ** TODO Create a quickstart guide
 #+END_SRC
+
 ** Markup
+
 - *Bold*
 - /italic/
 - _underline_
@@ -555,7 +576,9 @@ Each extra ~*~ increases the depth by one level.
 - however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers
   if they are present since their contents are interpreted =_literally_=.
 #+end_src
+
 ** Lists
+
 Ordered and unordered bullets can be nested in any order:
 - Unordered lists start with =+=, =-=, or =*=[^1].
 - Ordered lists start with =1.=, =1)=, =A.=, or =A)=.
@@ -572,17 +595,22 @@ Lists can contains tags (and checkboxes at the same time).
 - [ ] fruits :: get apples
 - [ ] veggies :: get carrots
 #+end_src
+
 ** Links
+
 #+begin_src
 [[https://orgmode.org][a nice website]]
 [[file:~/Pictures/dank-meme.png]]
 [[earlier heading][an earlier heading in the document]]
 #+end_src
+
 ** Images
 #+begin_src
 [[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
 #+end_src
+
 ** Blocks
+
 Org mode uses #+BEGIN … #+END blocks for many purposes. Some of the basic blocks types quote, example, and src.
 
 If you all you need is monospace text, you can use an example block.
@@ -602,7 +630,9 @@ syntax highlighting, code execution, literate programming, and more.
 (message "Hello world")
 \#+end_src
 #+END_SRC
+
 ** Tables
+
 | Tool         | Literate programming? | Reproducible Research? | Languages |
 |--------------+-----------------------+------------------------+-----------|
 | Javadoc      | partial               | no                     | Java      |
@@ -621,7 +651,9 @@ syntax highlighting, code execution, literate programming, and more.
 | Org-mode     | yes                   | yes                    | any       |
 
 #+end_src
+
 ** Comments
+
 # comments invisible
 #+begin_src
 # comments invisible
@@ -659,7 +691,9 @@ This text is commented out
 \** This heading is not commented
 This text will be exported and code blocks will run.
 #+END_SRC
+
 ** Macros
+
 #+BEGIN_SRC
 #+macro: attn _*/$1/*_
 {{{attn(Attention! This text gets all the markup!)}}}
@@ -671,6 +705,7 @@ Regular text. {{{red(This text will be red.)}}} More regular text.
 #+END_SRC
 
 * Hello Worg, the Org-Mode Community!
+
 [[https://orgmode.org/worg/]][worg]
 
 =org4beginner.org=
