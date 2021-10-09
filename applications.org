@@ -1263,6 +1263,12 @@ To see what version of Org mode you are running: *M-x org-version*
 
 [[https://github.com/adambard/learnxinyminutes-docs]]
 
+[[https://github.com/bzg]]
+
+[[https://bzg.fr/]]
+
+[[https://david.rothlis.net/emacs/howtolearn.html]]
+
 #+BEGIN_SRC emacs-lisp
 
 ;; This gives an introduction to Emacs Lisp in 15 minutes (v0.2d)
