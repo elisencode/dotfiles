@@ -4,7 +4,7 @@
 #+author: ELISE N
 #+date: 2021-10-04 Mon
 #+seq_todo: TODO() | IN-PROGRESS() | WAINTING(w) | CANCELLED(c) | DONE(d)
-#+options: toc:nil
+#+options: toc:t
 
 * "Tenir un fichier texte dans le quel tu listes toutes les commandes d'installation utilisé:
 
@@ -17,9 +17,8 @@
     + GitKraken data is stored in
       #+begin_src
       /home/{user}/.gitkraken == ~/.gitkraken.
-
       #+end_src
-  + run `gitkraken`
+  + run =gitkraken=
 -
 
 #+end_src
@@ -176,39 +175,38 @@ Installed:
 
 [[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
 
-- RTFM: `man apt-add-repository'
-- RTFM: `man apt'
+- RTFM: =man apt-add-repository=
+- RTFM: =man apt=
 - SEE ALSO
       + apt-get(8), apt-cache(8), sources.list(5), apt.conf(5), apt-config(8),
       + The APT User's guide in /usr/share/doc/apt-doc/, apt_preferences(5),
       + the APT Howto.
 - look into:
-  + `/etc/apt/sources.list'
-  + `/etc/apt/sources.list.d/'
-  + `/etc/apt/preferences.d/`
-- `ls -lAFh /usr/local/share'
-- `ls -lAFh /etc/apt'
+  + =/etc/apt/sources.list=
+  + =/etc/apt/sources.list.d/=
+  + =/etc/apt/preferences.d/=
+- =ls -lAFh /usr/local/share=
+- =ls -lAFh /etc/apt=
 
 ** How to listppa Script to get all the PPA installed on a system ready to share for reininstall?
 #+begin_src
 # Create shell script fonctions "list-apt-repositories":
 # - lists all repisitories in "/ect/sources.list"
 # - and "/etc/sources.list.d/*.list"
-# - to show only the PPAs: can add `--ppa-only'
-# - PPAs are automatically transformed to `ppa:USER/REPO' format
+# - to show only the PPAs: can add =--ppa-only=
+# - PPAs are automatically transformed to =ppa:USER/REPO= format
 
 # 1. list_sources
 # 2. list_ppa
    
 # Make an install script, pipe into another script "make-apt-repository-install-script":
-# - generated script supports the `-y/yes' argument for non-interactive use (see `add-apt-repository'(1))
+# - generated script supports the =-y/yes= argument for non-interactive use (see =add-apt-repository=(1))
 # - xargs -d'\n' printf "add-apt-repository \$y '%s'\n"
-
 #+end_src
-** `apt-mark showmanual' will print a list of manually installed packages
+** =apt-mark showmanual= will print a list of manually installed packages
 [[https://askubuntu.com/questions/17823/how-to-list-all-installed-packages]]
 
-RTFM: `man apt-mark'
+RTFM: =man apt-mark=
 
 To output the result into a text file:
 
@@ -218,14 +216,13 @@ cd ~/Desktop
 mkdir packages
 
 apt-mark showmanual > ~/Desktop/packages/list-manually-installed.txt
-
 #+end_src
 
 ** Apt-Get List Installed Packages - List All Installed Packages with *apt* on Ubuntu
 
 [[https://www.rosehosting.com/blog/list-all-installed-packages-with-apt-on-ubuntu/]]
 
-RTFM: `man apt'
+RTFM: =man apt=
 
 To output the result into a text file:
 
@@ -238,21 +235,21 @@ sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_
 #+end_src
 
 1. List the installed software packages on Ubuntu:
-   -`sudo apt list --installed'
+   - =sudo apt list --installed=
 2. Use the LESS program: to read the entire output
-   - `sudo apt list --installed | less
+   - =sudo apt list --installed | less
 3. Use the GREP command: list all packages that include Apache
-   - `sudo apt list --installed | grep -i apache
+   - =sudo apt list --installed | grep -i apache
 4. Use the DPKG program: another alternative that list the installed software packages
    on your *Ubuntu VPS* in the *dpkg* command 
-   - `sudo dpkg -l'
+   - =sudo dpkg -l=
 5. The output of the command *dpkg* will provide information:
    - name of the package
    - version
    - architecture
    - a short description of the package
    - Use the *grep* program to search for a specific package:
-     + `sudo dpkg -l | grep -i apache` 
+     + =sudo dpkg -l | grep -i apache= 
 
 
 * Repositories and package management
@@ -273,7 +270,7 @@ Each Ubuntu version has its own official set of four repositories:
 
 DPKG (Debian Package Management System):
 - Dpkg is a base package management system for the Debian Linux family.
-- it is used to install, remove, store and provide information about `.deb packages`.
+- it is used to install, remove, store and provide information about =.deb packages=.
 - a low-level tool and there are front-end tools that help users to obtain packages from
   remote repositories and/or handle complex package relations and these include:
   + APT (Advanced Package Tool):
@@ -288,7 +285,7 @@ DPKG (Debian Package Management System):
     It implements the same features as apt-get command line tool.
 
 
-** `sudo apt` vs `sudo apt-get`
+** =sudo apt= vs =sudo apt-get=
 [[https://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get]]
 
 [[https://debian-handbook.info/browse/stable/sect.apt-get.html]][aptitude, apt-get, and apt Commands]
@@ -301,7 +298,7 @@ What is apt?
 - APT mostly obtains packages from a distribution's official repositories.
 - apt is a second command-line based front end provided by APT which overcomes some design mistakes of apt-get.
 - with apt, you get all the necessary tools in one place. "pleasant for end users".
-- apt = most command used commanand options from apt-get and apt-cache.
+- apt == most command used commanand options from apt-get and apt-cache.
 - apt is a subset of apt-get and apt-cache commands
 - apt-get won't be deprecated, as a regular user, you should start using apt more ofter.
 
@@ -325,17 +322,17 @@ Hybrid system that mixes and matches snaps and traditional DEB-based installatio
 Get third-party software to Ubuntu users:
 1. Ubuntu Advanced Package Tool (Apt)
 2. Ubuntu Snap
-3. “Personal Package Archives” (PPAs) with `apt install`
+3. “Personal Package Archives” (PPAs) with =apt install=
 4. homebrew
 5. Flatpak
 6. git clone
 7. ISO
 8. install from source
-   - `./configure`
-   - `make`
-   - `make install`
-   - `dpkg -i pkg.deb`
-   - `rpm -Uvh pkg.rpm`
+   - =./configure=
+   - =make=
+   - =make install=
+   - =dpkg -i pkg.deb=
+   - =rpm -Uvh pkg.rpm=
 
 [[https://openclassrooms.com/forum/sujet/snap-ou-apt]][snap ou apt (openclassrooms)]
 
@@ -459,7 +456,6 @@ apt list
 sudo apt-get install <package name>
 # or
 sudo apt install <package name>
-
 #+end_src
 
 * Via Snap
@@ -469,10 +465,11 @@ sudo apt install <package name>
 
 E.g: Visual Studio Code is officially distributed as a Snap package in the Snap Store:
 
-- RTFM: `man snap`
-- `snap --version`
-- `snap list`
-- `snap info`
+- RTFM:
+- =man snap=
+- =snap --version=
+- =snap list=
+- =snap info=
 - "snap install [install-OPTIONS]"
 
 ** How to install
@@ -482,9 +479,9 @@ sudo snap install --classic code # or code-insiders
 #+end_src
 
 * Via PPA
-Installing Visual Studio Code with `apt`
+Installing Visual Studio Code with =apt=
 
-Download and install the `.deb package (64-bit)` from official software website:
+Download and install the =.deb package (64-bit)= from official software website:
 
 ** How to install
 [[https://code.visualstudio.com/docs/setup/linux]][Visual Studio Code on Linux]
@@ -492,7 +489,7 @@ Download and install the `.deb package (64-bit)` from official software website:
 [[https://doc.ubuntu-fr.org/visual_studio_code]][Wiki ubuntu-fr | Installation | Visual Studio Code]
 
 E.g: The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to
-download and install the `.deb package (64-bit)`, either through the graphical software center
+download and install the =.deb package (64-bit)=, either through the graphical software center
 if it's available,or through the command line with:
 
 Installing the .deb package will automatically install the apt repository and
@@ -501,12 +498,11 @@ Alternatively, the repository and key can also be installed manually with the fo
 
 #+begin_src
 pwd
-# `~` : Home folder, current users home directory.
-cd ~    # or `cd`
-# Create a `src/` directory to store applications to install/uninstall/remove manually
+# =~= : Home folder, current users home directory.
+cd ~    # or =cd=
+# Create a =src/= directory to store applications to install/uninstall/remove manually
 mkdir ~/src/
 cd ~/src/
-
 #+end_src
 
 #+begin_src
@@ -515,19 +511,32 @@ sudo apt install ./<file>.deb
 # If you're on an older Linux distribution, you will need to run this instead:
 # sudo dpkg -i <file>.deb
 # sudo apt-get install -f # Install dependencies
-
 #+end_src
 
 * Via ISO installs
 
-* Via `git clone` source code
+* Via =git clone= source code
 
 * Welcome to Org mode
 [[Quickstart ]][https://orgmode.org/quickstart.html]
 
 * Quickstart
 ** Preamble
+#+BEGIN_SRC
+#+title: The glories of Org
+#+author: A. Org Writer
+#+END_SRC
 ** Heading
+#+BEGIN_SRC
+* Welcome to Org-mode
+** Sub-heading
+Each extra ~*~ increases the depth by one level.
+#+END_SRC
+
+#+BEGIN_SRC
+* TODO Promulgate Org to the world
+** TODO Create a quickstart guide
+#+END_SRC
 ** Markup
 - *Bold*
 - /italic/
@@ -548,8 +557,8 @@ sudo apt install ./<file>.deb
 #+end_src
 ** Lists
 Ordered and unordered bullets can be nested in any order:
-- Unordered lists start with `+`, `-`, or `*`[^1].
-- Ordered lists start with `1.`, `1)`, `A.`, or `A)`.
+- Unordered lists start with =+=, =-=, or =*=[^1].
+- Ordered lists start with =1.=, =1)=, =A.=, or =A)=.
 
 Lists can contain checkboxes [ ], [-], [X].
 #+begin_src
@@ -606,5 +615,5 @@ Lists can contains tags (and checkboxes at the same time).
 ** Macros
 
 * Footnotes:
-[^1] `*` cannot be used to start a plain list if it is immediatly
+[^1] =*= cannot be used to start a plain list if it is immediatly
 preceded by a newline because it will be interpreted as a heading.
