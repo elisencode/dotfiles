@@ -654,11 +654,11 @@ As well as other markup.
 #+end_src
 #+end_comment
 
-* A top level heading
-** COMMENT This section and subsections are commented out
-*** This heading inherits the =COMMENT= keyword
+\* A top level heading
+\** COMMENT This section and subsections are commented out
+\*** This heading inherits the =COMMENT= keyword
 This text is commented out
-** This heading is not commented
+\** This heading is not commented
 This text will be exported and code blocks will run.
 #+END_SRC
 ** Macros
