@@ -8,18 +8,19 @@
 
 * "Tenir un fichier texte dans le quel tu listes toutes les commandes d'installation utilisé:
 
-- 06/10/2020 sudo snap install gitkraken --classic
-  + link:
-    + [[https://support.gitkraken.com/how-to-install/]]
-    + [[https://snapcraft.io/gitkraken]]
-  + data location:
-    + GitKraken data is stored in
-      #+begin_src
-      /home/{user}/.gitkraken == ~/.gitkraken
-      #+end_src
-  + run =gitkraken=
--
--
+** checklists [/]
+- [X] 06/10/2020 sudo snap install gitkraken --classic
+      + link:
+        + [[https://support.gitkraken.com/how-to-install/]]
+        + [[https://snapcraft.io/gitkraken]]
+      + data location:
+        + GitKraken data is stored in
+          #+begin_src
+          /home/{user}/.gitkraken == ~/.gitkraken
+          #+end_src
+      + run =gitkraken=
+- [%]
+- [%]
 
 
 
@@ -38,6 +39,7 @@ Course/dotfiles-from-start-to-finish-ish
 
 ~/.dotfiles/Brewfile
 
+** checklists [/]
 - [X] tap "homebrew/bundle"
 - [X] tap "homebrew/cask"
 - [X] brew "bat"
@@ -52,6 +54,7 @@ Course/dotfiles-from-start-to-finish-ish
 - [%]
 
 * TODO Manually
+** checklists [/]
 - [%] alfred
 - [%] dropbox
 - [%] gitkraken
@@ -78,6 +81,7 @@ Other Software:
 
 Software 3.38.1 (A nice way to manage the software on your system):
 Installed:
+** checklists [/]
 - [X] visual-studio-code
       + package: code
       + synaptic (package management software using apt)
