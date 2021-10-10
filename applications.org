@@ -44,26 +44,26 @@ Course/dotfiles-from-start-to-finish-ish
 - [X] brew "exa"
 - [X] brew "git"
 - [X] brew "httpie"
-- [ ] cask "alfred"
-- [ ] cask "dropbox"
-- [ ] cask "gitkraken"
-- [ ] cask "google-chrome"
-- [ ] cask "visual-studio-code"
-- [ ]
+- [%] cask "alfred"
+- [%] cask "dropbox"
+- [%] cask "gitkraken"
+- [%] cask "google-chrome"
+- [%] cask "visual-studio-code"
+- [%]
 
 * TODO Manually
-- [ ] alfred
-- [ ] dropbox
-- [ ] gitkraken
+- [%] alfred
+- [%] dropbox
+- [%] gitkraken
       + [[https://support.gitkraken.com/how-to-install/]]
-- [ ] google-chrome
+- [%] google-chrome
       + [[https://doc.ubuntu-fr.org/google_chrome]]
       + "Google Chrome est le navigateur internet propriétaire développé par Google sur la base du navigateur libre Chromium.
       Il n'est pas recommandé de l'utiliser, étant donné que des /problèmes de confidentialité sont très présents/.
       Si vous utilisez Google Chrome sur Windows ou macOS,
       utilisez plutôt Chromium, qui récolte moins de données personnelles que Chrome,
       ou encore Firefox, qui ne récolte rien du tout, et qui est le navigateur par défaut d'Ubuntu." 
-- [ ]
+- [%]
 
 * Ubuntu Software
 
@@ -122,9 +122,9 @@ Installed:
       + package:atom
       + synaptic (package management software using apt)
         + Local/main (packagecloud.io)
-- [ ] conda
+- [%] conda
       + [[https://docs.conda.io/en/latest/]]
-- [ ] anaconda
+- [%] anaconda
       + [[https://docs.anaconda.com/anaconda/install/index.html]]
 - [X] vim
       + package: vim
@@ -166,8 +166,8 @@ Installed:
         + Local/universe(archive.ubuntu.com)
         + visite homepage
           + [[https://www.audacityteam.org/]]
-- []
-- []
+- [%]
+- [%]
 
 ** How to get a list of all repositories and PPAs?
 
