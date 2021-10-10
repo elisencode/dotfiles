@@ -88,7 +88,7 @@ Installed:
         + LP-PPA-regolith-linux-release/hirsute
         + LP-PPA-regolith-linux-release/now
       + http://ppa.launchpad.net/regolith-linux/release/ubuntu/hirsute main
-      + [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources]][Install Regolith]
+      + [[https://regolith-linux.org/docs/getting-started/install/#ppa-sources][Install Regolith]]
       + install the standard variant of Regolith Desktop from the release PPA:
         #+begin_src
         $ sudo add-apt-repository ppa:regolith-linux/release
@@ -257,7 +257,7 @@ sudo apt list --installed > ~/Desktop/packages/list_installed_software_packages_
 
 * Repositories and package management
 
-[[https://itsfoss.com/ppa-guide/]][PPA GUIDE]
+[[https://itsfoss.com/ppa-guide/][PPA GUIDE]]
 
 What is a repository?
 A repository is a collection of files that has information about various software:
@@ -271,7 +271,7 @@ Each Ubuntu version has its own official set of four repositories:
 
 ** Linux Package Managers
 
-[[https://www.tecmint.com/linux-package-managers/]][linux-package-managers]
+[[https://www.tecmint.com/linux-package-managers/][linux-package-managers]]
 
 DPKG (Debian Package Management System):
 - Dpkg is a base package management system for the Debian Linux family.
@@ -294,7 +294,7 @@ DPKG (Debian Package Management System):
 
 [[https://askubuntu.com/questions/445384/what-is-the-difference-between-apt-and-apt-get]]
 
-[[https://debian-handbook.info/browse/stable/sect.apt-get.html]][aptitude, apt-get, and apt Commands]
+[[https://debian-handbook.info/browse/stable/sect.apt-get.html][aptitude, apt-get, and apt Commands]]
 
 [[https://itsfoss.com/apt-vs-apt-get-difference/]]
 
@@ -323,7 +323,7 @@ What is apt?
 
 Hybrid system that mixes and matches snaps and traditional DEB-based installations?
 
-[[https://ubuntu.com/core]][What is Ubuntu Core 20?]
+[[https://ubuntu.com/core][What is Ubuntu Core 20?]]
 
 Get third-party software to Ubuntu users:
 1. Ubuntu Advanced Package Tool (Apt)
@@ -340,13 +340,13 @@ Get third-party software to Ubuntu users:
    - =dpkg -i pkg.deb=
    - =rpm -Uvh pkg.rpm=
 
-[[https://openclassrooms.com/forum/sujet/snap-ou-apt]][snap ou apt (openclassrooms)]
+[[https://openclassrooms.com/forum/sujet/snap-ou-apt][snap ou apt (openclassrooms)]]
 
-[[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en]][Add a Personal Package Archive (PPA)]
+[[https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en][Add a Personal Package Archive (PPA)]]
 
-[[https://itsfoss.com/ppa-guide/]][Using PPA in Ubuntu Linux]
+[[https://itsfoss.com/ppa-guide/][Using PPA in Ubuntu Linux]]
 
-[[https://snapcraft.io/about]][snapcrat]
+[[https://snapcraft.io/about][snapcrat]]
 
 [[https://www.howtogeek.com/670084/what-you-need-to-know-about-snaps-on-ubuntu-20.04/]]
 
@@ -405,7 +405,7 @@ What is Flatpak?
 
 [[https://www.techrepublic.com/article/why-snap-and-flatpak-are-so-important-to-linux/]]
 
-[[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test]][are snap and flatpak apps safe to install]
+[[https://askubuntu.com/questions/1179175/are-snap-and-flatpak-apps-safe-to-install-are-they-official-approved-or-test][are snap and flatpak apps safe to install]]
 
 Are Snap and Flatpak apps safe to install?
   - both snaps and Flatpaks is that they will bring in any libraries they need to run inside their own folders.
@@ -440,7 +440,7 @@ What is homebrew, brew bundle, brew file, brew tap, homebrew-cask, homebrew?
   + Brews (Packages) (Formulae)
 
 Summary: Before install app:
-  - [[https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/]][How to verify the source of a Snap package]
+  - [[https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/][How to verify the source of a Snap package]]
   - Learn to *decrypt* the *source code*.
   - check author, current version/last update for *snap version*
   - and same things for *mainstream version*,
@@ -496,9 +496,9 @@ Download and install the =.deb package (64-bit)= from official software website:
 
 ** How to install
 
-[[https://code.visualstudio.com/docs/setup/linux]][Visual Studio Code on Linux]
+[[https://code.visualstudio.com/docs/setup/linux][Visual Studio Code on Linux]]
 
-[[https://doc.ubuntu-fr.org/visual_studio_code]][Wiki ubuntu-fr | Installation | Visual Studio Code]
+[[https://doc.ubuntu-fr.org/visual_studio_code][Wiki ubuntu-fr | Installation | Visual Studio Code]]
 
 E.g: The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to
 download and install the =.deb package (64-bit)=, either through the graphical software center
@@ -531,7 +531,7 @@ sudo apt install ./<file>.deb
 
 * Welcome to Org mode
 
-[[Quickstart ]][https://orgmode.org/quickstart.html]
+[[Quickstart ][https://orgmode.org/quickstart.html]]
 
 * Quickstart
 
@@ -706,7 +706,7 @@ Regular text. {{{red(This text will be red.)}}} More regular text.
 
 * Hello Worg, the Org-Mode Community!
 
-[[https://orgmode.org/worg/]][worg]
+[[https://orgmode.org/worg/][worg]]
 
 =org4beginner.org=
 
